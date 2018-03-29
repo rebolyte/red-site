@@ -1,0 +1,9 @@
+---
+baseURL: "https://www.red-lang.org/"
+languageCode: "en-us"
+title: "Red Programming Language"
+metaDataFormat: yaml
+pluralizeListTitles: false
+params:
+  CopyrightHTML: "Copyright &#xA9; 2018 Grayscale Digital LLC"
+---
