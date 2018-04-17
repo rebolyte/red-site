@@ -11,7 +11,7 @@
     "watch": "webpack --mode development --watch",
     "prebuild": "yarn run clean",
     "build": "webpack --mode production",
-    "fmt": "prettier --write \"src/**/*.js\"",
+    "fmt": "prettier --write \"src/**/*.{js,css}\"",
     "lint": "eslint \"src/js/**/*.js\" && stylelint \"src/styles/**/*.css\""
   },
   "husky": {
