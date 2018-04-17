@@ -11,3 +11,7 @@
 .btn-blue:hover {
 	@apply .bg-blue-dark;
 }
+
+@extends {
+	margin: 0px;
+}
