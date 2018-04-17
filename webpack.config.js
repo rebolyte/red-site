@@ -1,8 +1,10 @@
 const webpack = require('webpack');
 const path = require('path');
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const WebpackAssetsManifest = require('webpack-assets-manifest');
 
 const paths = {
+	CWD: path.resolve(__dirname),
 	DIST: path.resolve(__dirname, 'static'),
 	SRC: path.resolve(__dirname, 'src'),
 	JS: path.resolve(__dirname, 'src/js')
@@ -11,11 +13,7 @@ const paths = {
 module.exports = {
 	entry: {
 		main: path.join(paths.JS, 'main.js'),
-		vendor: [
-			'vue',
-			'wretch',
-			'date-fns'
-		]
+		vendor: ['vue', 'wretch', 'date-fns']
 	},
 	output: {
 		path: paths.DIST,
@@ -32,7 +30,7 @@ module.exports = {
 				test: /\.s?css$/,
 				// Loader chaining works from right to left
 				use: [
-					MiniCssExtractPlugin.loader, 
+					MiniCssExtractPlugin.loader,
 					{ loader: 'css-loader', options: { importLoaders: 1 } },
 					'postcss-loader'
 				]
@@ -46,6 +44,9 @@ module.exports = {
 		// https://github.com/webpack-contrib/extract-text-webpack-plugin/issues/701
 		new MiniCssExtractPlugin({
 			filename: 'styles/[name].[contenthash:10].css'
+		}),
+		new WebpackAssetsManifest({
+			output: '../data/assetMap.json'
 		}),
 		new webpack.NamedModulesPlugin()
 	]
