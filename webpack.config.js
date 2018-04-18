@@ -13,8 +13,12 @@ const ifProd = (val, alt) => {
 	}
 	return isProd ? val : alt;
 };
-
-console.log('production?', isProd);
+const ifDev = (val, alt) => {
+	if (typeof val === 'undefined') {
+		return !isProd;
+	}
+	return !isProd ? val : alt;
+};
 
 const paths = {
 	CWD: path.resolve(__dirname),
@@ -33,8 +37,8 @@ class TailwindExtractor {
 
 module.exports = {
 	entry: {
-		main: path.join(paths.JS, 'main.js'),
-		vendor: ['vue', 'wretch', 'date-fns']
+		main: path.join(paths.JS, 'main.js')
+		// vendor: ['vue', 'wretch', 'date-fns']
 	},
 	output: {
 		path: paths.DIST,
@@ -92,6 +96,6 @@ module.exports = {
 		new WebpackAssetsManifest({
 			output: '../data/assetMap.json'
 		}),
-		new webpack.NamedModulesPlugin()
+		ifDev(new webpack.NamedModulesPlugin())
 	].filter(el => el)
 };
