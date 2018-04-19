@@ -9,6 +9,7 @@
     "predev": "yarn run clean",
     "dev": "cross-env NODE_ENV=development webpack --mode development --progress",
     "watch": "yarn run dev --watch",
+    "start": "concurrently \"yarn run watch\" \"hugo server\"",
     "prebuild": "yarn run clean",
     "build": "cross-env NODE_ENV=production webpack --mode production --progress",
     "fmt": "prettier --write \"src/**/*.{js,ts,css}\"",
@@ -20,6 +21,7 @@
     }
   },
   "devDependencies": {
+    "concurrently": "^3.5.1",
     "cross-env": "^5.1.4",
     "css-loader": "^0.28.11",
     "eslint": "^4.19.1",
