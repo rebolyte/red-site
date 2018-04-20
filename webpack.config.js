@@ -37,7 +37,7 @@ class TailwindExtractor {
 
 module.exports = {
 	entry: {
-		main: path.join(paths.JS, 'main.js')
+		main: path.join(paths.JS, 'main.ts')
 		// vendor: ['vue', 'wretch', 'date-fns']
 	},
 	output: {
