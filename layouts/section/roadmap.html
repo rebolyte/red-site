@@ -1,0 +1,19 @@
+{{ define "title" }} {{ .Title }} &ndash; {{ .Site.Title }} {{ end }}
+
+{{ define "main" }}
+
+<div>
+    <h1>{{ .Title }}</h1>
+
+    {{ .Content }}
+
+    {{ range .Params.roadmapEntries }}
+        <div>
+            <h4>{{ .heading }}</h4>
+            <p>{{ .text }}</p>
+        </div>
+    {{ end }}
+
+</div>
+
+{{ end }}
