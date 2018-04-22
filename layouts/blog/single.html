@@ -1,0 +1,13 @@
+{{ define "title" }}
+	{{ .Title }} &ndash; Blog &ndash; {{ .Site.Title }}
+{{ end }}
+
+{{ define "main" }}
+
+	<div class="mw700 center">
+		<h1>{{ .Title }}</h1>
+		<div class="f4 mt3 title">Posted {{ dateFormat "2 January, 2006" .Date }}</div>
+		{{ .Content }}
+	</div>
+
+{{ end }}

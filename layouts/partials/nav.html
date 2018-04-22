@@ -1,7 +1,7 @@
 <nav>
     <ul>
-        <li>nav 1</li>
-        <li>nav 2</li>
-        <li>nav 3</li>
+        {{ range .Site.Menus.main }}
+            <li><a class="link dim gray f6 f5-l dib mr2 mr3-l" href="{{ .URL }}">{{ .Name }}</a></li>
+        {{ end }}
     </ul>
 </nav>

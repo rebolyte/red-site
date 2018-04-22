@@ -1,0 +1,18 @@
+{{ define "title" }} {{ .Title }} &ndash; {{ .Site.Title }} {{ end }}
+
+{{ define "main" }}
+
+<div>
+    <h1>{{ .Title }}</h1>
+
+    <p>This is the blog.</p>
+
+    {{ range (where .Site.Pages.ByDate.Reverse "Section" "blog") }}
+        {{ if ne .Permalink $.Permalink }} <!-- don't include self -->
+            {{ .Render "summary" }}
+        {{ end }}
+    {{ end }}
+
+</div>
+
+{{ end }}

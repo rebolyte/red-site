@@ -1,0 +1,16 @@
+<article class="mb-4">
+    <a href="{{ .RelPermalink }}">
+        <h2>
+            {{ .Title }}
+        </h2>
+    </a>
+    <div>Posted {{ .Date.Format "2 January, 2006" }}</div>
+    <p>
+        {{ .Summary }}
+    </p>
+    {{ if .Truncated }}
+    <p class="read-more-anchor">
+        <a class="link beige" href="{{ .RelPermalink }}">Read the full article</a>
+    </p>
+    {{ end }}
+</article>

@@ -4,6 +4,33 @@ languageCode: "en-us"
 title: "Red Programming Language"
 metaDataFormat: yaml
 pluralizeListTitles: false
+menu:
+  main:
+    - Name: "Home"
+      Weight: -120
+      Identifier: "home"
+      URL: "/"
+    - Name: "About"
+      Weight: -110
+      Identifier: "about"
+      URL: "/about/"
+    - Name: "Documentation"
+      Weight: -100
+      Identifier: "docs"
+      URL: "https://github.com/red/red"
+    - Name: "Blog"
+      Weight: -90
+      Identifier: "blog"
+      URL: "/blog/"
+    - Name: "Roadmap"
+      Weight: -80
+      Identifier: "roadmap"
+      URL: "/roadmap/"
+    - Name: "Download"
+      Weight: -70
+      Identifier: "download"
+      URL: "/download/"
+    
 params:
-  CopyrightHTML: "Copyright &#xA9; 2018 Grayscale Digital LLC"
+  CopyrightHTML: "Copyright &#xA9; 2018 FullStack Technologies Ltd"
 ---
