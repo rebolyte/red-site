@@ -7,7 +7,7 @@
     {{ .Hugo.Generator }}
     <!-- specify default title -->
     <title>{{ block "title" . }}
-		{{ .Site.Title }}
+		{{ .Title }}
 	{{ end }}</title>
     {{ partial "header_includes" . }}
 </head>

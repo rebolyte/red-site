@@ -1,36 +1,76 @@
 ---
 baseURL: "https://www.red-lang.org/"
 languageCode: "en-us"
-title: "Red Programming Language"
 metaDataFormat: yaml
 pluralizeListTitles: false
-menu:
-  main:
-    - Name: "Home"
-      Weight: -120
-      Identifier: "home"
-      URL: "/"
-    - Name: "About"
-      Weight: -110
-      Identifier: "about"
-      URL: "/about/"
-    - Name: "Documentation"
-      Weight: -100
-      Identifier: "docs"
-      URL: "https://github.com/red/red"
-    - Name: "Blog"
-      Weight: -90
-      Identifier: "blog"
-      URL: "/blog/"
-    - Name: "Roadmap"
-      Weight: -80
-      Identifier: "roadmap"
-      URL: "/roadmap/"
-    - Name: "Download"
-      Weight: -70
-      Identifier: "download"
-      URL: "/download/"
-    
-params:
-  CopyrightHTML: "Copyright &#xA9; 2018 FullStack Technologies Ltd"
+enableRobotsTXT: true
+defaultContentLanguage: "en"
+enableMissingTranslationPlaceholders: true
+
+permalinks:
+  blog: /:section/:year/:month/:slug/
+
+languages:
+  en:
+    title: "English"
+    params:
+      CopyrightHTML: "Copyright &#xA9; 2018 FullStack Technologies Ltd"
+    menu:
+      main:
+        - Name: "Home"
+          Weight: 1
+          Identifier: "home"
+          URL: "/"
+        - Name: "About"
+          Weight: 2
+          Identifier: "about"
+          URL: "/about/"
+        - Name: "Documentation"
+          Weight: 3
+          Identifier: "docs"
+          URL: "https://github.com/red/red"
+        - Name: "Blog"
+          Weight: 4
+          Identifier: "blog"
+          URL: "/blog/"
+        - Name: "Roadmap"
+          Weight: 5
+          Identifier: "roadmap"
+          URL: "/roadmap/"
+        - Name: "Download"
+          Weight: 6
+          Identifier: "download"
+          URL: "/download/"
+  fr:
+    title: "Francais"
+    params:
+      CopyrightHTML: "Droits d'auteur &#xA9; 2018 FullStack Technologies Ltd"
+    blackfriday:
+      angledQuotes: true
+    menu:
+      main:
+        - Name: "Accueil"
+          Weight: 1
+          Identifier: "home"
+          URL: "/fr/"
+        - Name: "À propos"
+          Weight: 2
+          Identifier: "about"
+          URL: "/about/"
+        - Name: "Documentation"
+          Weight: 3
+          Identifier: "docs"
+          URL: "https://github.com/red/red"
+        - Name: "Blog"
+          Weight: 4
+          Identifier: "blog"
+          URL: "/blog/"
+        - Name: "Feuille de route"
+          Weight: 5
+          Identifier: "roadmap"
+          URL: "/roadmap/"
+        - Name: "Télécharger"
+          Weight: 6
+          Identifier: "download"
+          URL: "/download/"
 ---

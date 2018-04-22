@@ -1,5 +1,16 @@
 {{ define "main" }}
 
+    {{ if .IsTranslated }}
+        {{ $currentLang := .Site.Language.Lang }}
+        {{ range .Translations }}
+            <span>
+                <a class="navbar-item lang" href="{{ .Permalink }}">
+                    {{ .Lang }}
+                </a>
+            </span>
+        {{ end }}
+    {{ end }}
+
     <h1 class="bg-red-darker text-white">Homepage</h1>
 
     {{ .Content }}
