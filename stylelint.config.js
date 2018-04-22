@@ -10,5 +10,6 @@ module.exports = {
 		],
 		indentation: 'tab',
 		'length-zero-no-unit': null
-	}
+	},
+	ignoreFiles: 'public/**/*.css'
 };
