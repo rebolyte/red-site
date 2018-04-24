@@ -1,5 +1,5 @@
 ---
-title: Red Programming Language en Francais
+title: Red Programming Language en Français
 ---
 
 Content goes here.

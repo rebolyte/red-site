@@ -5,6 +5,11 @@
 <div>
     <h1>{{ .Title }}</h1>
 
+    {{- range .Params.blocks -}}
+        {{- if eq .template "media-feature" -}}{{ partial "blocks/media-feature" (dict "Params" .) }}{{- end -}}
+        {{- if eq .template "call-to-action" -}}{{ partial "blocks/cta" (dict "Params" .) }}{{- end -}}
+    {{- end -}}
+
     {{ .Content }}
 
 </div>

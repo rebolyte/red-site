@@ -23,8 +23,7 @@ const ifDev = (val, alt) => {
 const paths = {
 	CWD: path.resolve(__dirname),
 	DIST: path.resolve(__dirname, 'static'),
-	SRC: path.resolve(__dirname, 'src'),
-	JS: path.resolve(__dirname, 'src/js')
+	SRC: path.resolve(__dirname, 'src')
 };
 
 // Custom PurgeCSS extractor for Tailwind that allows special characters in class names.
@@ -37,7 +36,7 @@ class TailwindExtractor {
 
 module.exports = {
 	entry: {
-		main: path.join(paths.JS, 'main.ts')
+		main: path.join(paths.SRC, 'js', 'main.ts')
 		// vendor: ['vue', 'wretch', 'date-fns']
 	},
 	output: {
@@ -83,7 +82,7 @@ module.exports = {
 			new PurgeCssPlugin({
 				paths: glob.sync([
 					path.join(paths.CWD, 'layouts/**/*.html'),
-					path.join(paths.JS, '/**/*.{js,ts,vue}')
+					path.join(paths.SRC, 'js', '/**/*.{js,ts,vue}')
 				]),
 				extractors: [
 					{

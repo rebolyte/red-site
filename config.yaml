@@ -42,7 +42,7 @@ languages:
           Identifier: "download"
           URL: "/download/"
   fr:
-    title: "Francais"
+    title: "Français"
     params:
       CopyrightHTML: "Droits d'auteur &#xA9; 2018 FullStack Technologies Ltd"
     blackfriday:
