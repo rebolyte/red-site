@@ -1,0 +1,12 @@
+{{ define "main" }}
+
+<!-- DEFAULT TAXONOMY PAGE - shows up at /tags/{term} -->
+
+<main>
+    <h1>{{ .Title }}</h1>
+    {{ range .Data.Pages }}
+        {{ .Render "summary" }}
+    {{ end }}
+</main>
+
+{{ end }}

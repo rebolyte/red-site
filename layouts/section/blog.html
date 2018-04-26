@@ -13,6 +13,26 @@
         {{ end }}
     {{ end }}
 
+    <!-- <ul id="all-tags">
+        {{ range ($.Site.GetPage "taxonomyTerm" "tags").Pages }}
+			<li><a href="{{ .RelPermalink }}">{{ .Title | lower }}</a></li>
+        {{ end }}
+    </ul> -->
+
+    <h2>Top tags</h2>
+    <ul>
+        {{ range $name, $items := .Site.Taxonomies.tags }}
+            <li>
+                <a class="widget-taglist__link widget__link btn" href="{{ "tags/" | relLangURL }}{{ $name | urlize | lower }}" title="{{ $name | humanize }}">
+                    {{ $name | humanize | lower }}
+                    ({{ $items.Count }})
+                </a>
+            </li>
+        {{ end }}
+    </ul>
+
+    <a href="/tags/">See all tags</a>
+
 </div>
 
 {{ end }}

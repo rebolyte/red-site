@@ -10,6 +10,9 @@ enableMissingTranslationPlaceholders: true
 permalinks:
   blog: /:section/:year/:month/:slug/
 
+taxonomies:
+  tags: tags
+
 languages:
   en:
     title: "English"

@@ -8,6 +8,12 @@
 		<h1>{{ .Title }}</h1>
 		<div class="f4 mt3 title">Posted {{ dateFormat "2 January, 2006" .Date }}</div>
 		{{ .Content }}
+		<h3>Tags:</h3>
+		<ul id="tags">
+			{{ range .Params.tags }}
+				<li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></li>
+			{{ end }}
+		</ul>
 	</div>
 
 {{ end }}

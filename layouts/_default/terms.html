@@ -1,0 +1,14 @@
+{{ define "main" }}
+
+<!-- DEFAULT TERMS - shows up at /tags/ -->
+<main>
+    <h1>{{ .Title }}</h1>
+    {{ $data := .Data }}
+    {{ range $key, $value := .Data.Terms.ByCount }}
+        <h2>
+            <a href="{{ $data.Plural }}/{{ $value.Name | urlize }}">{{ $value.Name }}</a> {{ $value.Count }}
+        </h2>
+    {{ end }}
+</main>
+
+{{ end }}
