@@ -43,6 +43,7 @@ module.exports = {
 		path: paths.DIST,
 		filename: 'js/[name].[chunkhash:10].js'
 	},
+	devtool: isProd ? 'source-map' : 'cheap-eval-source-map',
 	module: {
 		rules: [
 			{
@@ -54,16 +55,28 @@ module.exports = {
 				test: /\.s?css$/,
 				// Loader chaining works from right to left
 				use: [
-					MiniCssExtractPlugin.loader,
+					// Use inline style loader for dev since MiniCss isn't writing things to disk properly
+					isProd ? MiniCssExtractPlugin.loader : 'style-loader',
 					{
 						loader: 'css-loader',
 						options: {
 							importLoaders: 1,
-							minimize: ifProd()
-							// sourceMap: true
+							minimize: ifProd(),
+							sourceMap: ifDev()
 						}
 					},
-					'postcss-loader'
+					{
+						loader: 'postcss-loader',
+						options: {
+							sourceMap: ifDev()
+						}
+					},
+					{
+						loader: 'sass-loader',
+						options: {
+							sourceMap: ifDev()
+						}
+					}
 				]
 			}
 		]
@@ -74,7 +87,7 @@ module.exports = {
 	plugins: [
 		// https://github.com/webpack-contrib/extract-text-webpack-plugin/issues/701
 		new MiniCssExtractPlugin({
-			filename: 'styles/[name].[contenthash:10].css'
+			filename: 'styles/[name].[hash:10].css'
 		}),
 		// https://tailwindcss.com/docs/controlling-file-size
 		// https://www.purgecss.com/with-webpack

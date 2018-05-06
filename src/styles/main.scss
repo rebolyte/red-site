@@ -1,0 +1,42 @@
+@tailwind preflight;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@font-face {
+	font-family: 'avenirHeavy';
+	src: url('/fonts/AvenirHeavy.ttf');
+}
+@font-face {
+	font-family: 'avenirMedium';
+	src: url('/fonts/AvenirMedium.ttf');
+}
+@font-face {
+	font-family: 'avenirLight';
+	src: url('/fonts/AvenirLight.ttf');
+}
+@font-face {
+	font-family: 'avenirBook';
+	src: url('/fonts/AvenirBook.ttf');
+}
+
+body {
+	font-family: 'avenirMedium', sans-serif;
+}
+
+#logoLabel {
+	font-family: 'avenirHeavy', sans-serif;
+}
+
+.btn-blue {
+	@apply .bg-blue .text-white .font-bold .py-2 .px-4 .rounded;
+}
+
+.btn-blue:hover {
+	@apply .bg-blue-dark;
+}
+
+@extends {
+	margin: 0px;
+}
