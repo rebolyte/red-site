@@ -29,12 +29,16 @@ body {
 	font-family: 'avenirHeavy', sans-serif;
 }
 
-.btn-blue {
-	@apply .bg-blue .text-white .font-bold .py-2 .px-4 .rounded;
+.nav-link {
+	@apply .text-lg .leading-normal .text-blue .no-underline .ml-8;
 }
 
-.btn-blue:hover {
-	@apply .bg-blue-dark;
+.nav-link:hover {
+	@apply .text-blue-dark;
+}
+
+.bg-blue-gradient {
+	background-image: linear-gradient(to bottom, #3e4d6a, #212234);
 }
 
 @extends {

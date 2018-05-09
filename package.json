@@ -5,16 +5,18 @@
 	"license": "Private, all rights reserved",
 	"private": true,
 	"scripts": {
-		"clean": "shx rm -rf public && shx rm -f static/styles/*.css && shx rm -f static/js/*.js && shx rm -f data/*.json",
+		"clean":
+			"shx rm -rf public && shx rm -f static/styles/*.css && shx rm -f static/js/*.js && shx rm -f data/*.json",
 		"predev": "yarn run clean",
 		"dev": "cross-env NODE_ENV=development webpack --mode development --progress && hugo",
 		"prewatch": "yarn run clean",
-		"watch": "concurrently 'cross-env NODE_ENV=development webpack --mode development --progress --watch' 'hugo server --disableFastRender'",
+		"watch":
+			"concurrently 'cross-env NODE_ENV=development webpack --mode development --progress --watch' 'hugo server --disableFastRender'",
 		"start": "yarn run watch",
 		"prebuild": "yarn run clean",
 		"build": "cross-env NODE_ENV=production webpack --mode production --progress && hugo",
-		"fmt": "prettier --write \"src/**/*.{js,ts,css}\"",
-		"lint": "eslint \"src/js/**/*.{js,ts}\" && stylelint \"src/styles/**/*.css\""
+		"fmt": "prettier --write \"src/**/*.{js,ts,scss,css}\"",
+		"lint": "eslint \"src/js/**/*.{js,ts}\" && stylelint \"src/styles/**/*.scss\""
 	},
 	"husky": {
 		"hooks": {

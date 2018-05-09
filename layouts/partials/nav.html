@@ -1,10 +1,13 @@
-<nav>
-    <ul>
-        {{- $currentPage := . -}}
-        {{ range .Site.Menus.main -}}
-            <li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
-                <a href="{{ .URL | absLangURL }}">{{ .Name }}</a>
-            </li>
-        {{- end }}
-    </ul>
-</nav>
+<header class="pin-t pin-l w-full py-4 bg-rl-light-blue">
+    <div class="flex items-center justify-between px-8">
+        <span class="text-2xl font-semibold">
+            Red
+        </span>
+        <nav class="flex items-center">
+            {{- $currentPage := . -}}
+            {{ range .Site.Menus.main -}}
+                <a class="nav-link {{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+            {{ end }}
+        </nav>
+    </div>
+</header>

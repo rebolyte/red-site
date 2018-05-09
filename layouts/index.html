@@ -1,5 +1,7 @@
 {{ define "main" }}
 
+    {{ partial "home_hero" . }}
+
     {{ if .IsTranslated }}
         {{ $currentLang := .Site.Language.Lang }}
         {{ range .Translations }}
@@ -10,8 +12,6 @@
             </span>
         {{ end }}
     {{ end }}
-
-    <h1 class="bg-rl-red text-white">Homepage</h1>
 
     {{ .Content }}
 

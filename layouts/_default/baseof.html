@@ -11,7 +11,8 @@
 	{{ end }}</title>
     {{ partial "header_includes" . }}
 </head>
-<body>
+<body class="bg-rl-light-gray">
+    {{ partial "secondary_nav" . }}
     {{ partial "nav" . }}
     {{ block "main" . }}
     {{ end }}
