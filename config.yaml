@@ -44,6 +44,37 @@ languages:
           Weight: 6
           Identifier: "download"
           URL: "/download/"
+      social:
+        - Name: "Reddit"
+          Weight: 1
+          Identifier: "reddit"
+          URL: "https://reddit.com"
+          Icon: "fa-reddit"
+        - Name: "Facebook"
+          Weight: 2
+          Identifier: "facebook"
+          URL: "https://facebook.com"
+          Icon: "fa-facebook"
+        - Name: "Twitter"
+          Weight: 3
+          Identifier: "twitter"
+          URL: "https://twitter.com"
+          Icon: "fa-twitter"
+        - Name: "Gitter"
+          Weight: 4
+          Identifier: "gitter"
+          URL: "https://gitter.com"
+          Icon: "fa-gitter"
+        - Name: "GitHub"
+          Weight: 5
+          Identifier: "github"
+          URL: "https://github.com"
+          Icon: "fa-github"
+        - Name: "Telegram"
+          Weight: 6
+          Identifier: "telegram"
+          URL: "https://telegram.com"
+          Icon: "fa-telegram"
   fr:
     title: "Français"
     params:

@@ -1,6 +1,9 @@
 {{ define "main" }}
 
     {{ partial "home_hero" . }}
+    {{ partial "home_latest-blog" . }}
+    {{ partial "home_live-coding" . }}
+    {{ partial "home_code-samples" . }}
 
     {{ if .IsTranslated }}
         {{ $currentLang := .Site.Language.Lang }}

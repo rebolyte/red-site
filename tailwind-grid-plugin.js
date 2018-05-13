@@ -29,7 +29,12 @@ module.exports = ({ grids = _.range(1, 13), gaps = {}, variants = ['responsive']
 					[`.col-end-${line}`]: {
 						gridColumnEnd: `${line}`
 					}
-				}))
+				})),
+				{
+					'.grid-justify-center': {
+						justifyItems: 'center'
+					}
+				}
 			],
 			variants
 		);
