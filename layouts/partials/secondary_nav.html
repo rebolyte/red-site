@@ -2,6 +2,16 @@
     <div class="container mx-auto flex items-center justify-between py-2 px-4">
         <span class="font-semibold">
             ecosystem / language
+            {{ if .IsTranslated }}
+            {{ $currentLang := .Site.Language.Lang }}
+            {{ range .Translations }}
+                <span>
+                    <a class="navbar-item lang" href="{{ .Permalink }}">
+                        {{ .Lang }}
+                    </a>
+                </span>
+            {{ end }}
+        {{ end }}
         </span>
         <nav class="flex items-center">
             {{- $currentPage := . -}}

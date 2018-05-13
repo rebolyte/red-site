@@ -1,52 +1,18 @@
-<section class="media-feature section
-{{- with .Params.image_position -}}
-    {{- if eq "left" . }} media-feature--image-left{{- end -}}
-    {{- if eq "right" . }} media-feature--image-right{{- end -}}
-    {{- if eq "top" . }} media-feature--image-top{{- end -}}
-    {{- if eq "bottom" . }} media-feature--image-bottom{{- end -}}
-{{- end -}}">
-    <div class="container">
-        <div class="columns">
-            <div class="column is-three-fifths media-feature__image {{ if .Params.image_shadow }}media-feature__image--shadow{{ end }}">
-                <img src="{{ relURL .Params.image }}" />
-            </div>
-            <div class="column media-feature__content">
-                {{- with .Params.heading -}}
-                    <h2 class="title">{{ markdownify . }}</h2>
-                {{- end -}}
-                {{- with .Params.subheading -}}
-                    <h3 class="subtitle">{{ markdownify . }}</h3>
-                {{- end -}}
-                {{- with .Params.content -}}
-                    <div class="content">
-                    {{ markdownify . }}
-                    </div>
-                {{- end -}}
-                {{- if and .Params.button_url .Params.button_text -}}
-                <a class="button is-primary" href="{{ .Params.button_url }}">{{ .Params.button_text }}</a>
-                {{- end -}}
-            </div>
-        </div>
-    </div>
-</section>
-
 <section class="bg-black py-4">
-    <div class="max-w-xl mx-auto px-8 grid cols-2">
+    <div class="max-w-xl mx-auto px-8 grid grid-columns-1 md:grid-columns-2
+    {{- with .Params.image_position -}}
+        {{- if eq "left" . }} grid-col-2-reverse{{- end -}}
+    {{- end -}}">
         <div class="px-8 py-4 bg-blue-darker">
-            diagram
+            <img src="{{ relURL .Params.image }}" />
         </div>
         <div class="px-8 py-4 bg-teal">
-            <p class="font-semibold">Abstraction on Every Level</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam officiis, eligendi alias porro ullam libero facere modi quia sint? Libero aspernatur atque, error modi sit vitae similique laudantium ipsa eius!</p>
-        </div>
-        <!-- /row -->
-        <!-- row -->
-        <div class="px-8 py-4 bg-teal">
-            <p class="font-semibold">RED Tokens on the Blockchain</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam cum iste eum dolor explicabo illo labore facere ducimus beatae. Praesentium illum minima laboriosam optio veniam. Saepe dolore at maiores in!</p>
-        </div>
-        <div class="px-8 py-4 bg-blue-darker">
-            diagram
+            {{- with .Params.heading -}}
+                <p class="font-semibold">{{ markdownify . }}</p>
+            {{- end -}}
+            {{- with .Params.content -}}
+                <p>{{ markdownify . }}</p>
+            {{- end -}}
         </div>
     </div>
 </section>

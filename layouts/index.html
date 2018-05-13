@@ -1,20 +1,6 @@
 {{ define "main" }}
 
-    {{ partial "home_hero" . }}
-    {{ partial "home_latest-blog" . }}
-    {{ partial "home_live-coding" . }}
-    {{ partial "home_code-samples" . }}
-
-    {{ if .IsTranslated }}
-        {{ $currentLang := .Site.Language.Lang }}
-        {{ range .Translations }}
-            <span>
-                <a class="navbar-item lang" href="{{ .Permalink }}">
-                    {{ .Lang }}
-                </a>
-            </span>
-        {{ end }}
-    {{ end }}
+    {{ partial "blockloader" . }}
 
     {{ .Content }}
 
