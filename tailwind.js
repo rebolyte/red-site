@@ -873,7 +873,8 @@ module.exports = {
 		require('tailwindcss/plugins/container')({
 			// center: true,
 			// padding: '1rem',
-		})
+		}),
+		require('./tailwind-grid-plugin')({})
 	],
 
 	/*
