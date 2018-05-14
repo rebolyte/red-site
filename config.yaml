@@ -75,6 +75,23 @@ languages:
           Identifier: "telegram"
           URL: "https://telegram.com"
           Icon: "fa-telegram"
+      ecosystem:
+        - Name: "Red Language"
+          Weight: 1
+          Identifier: "redlang"
+          URL: "https://red-lang.org"
+        - Name: "Red Foundation"
+          Weight: 2
+          Identifier: "foundation"
+          URL: "https://foundation.red-lang.org"
+        - Name: "Red ICO"
+          Weight: 3
+          Identifier: "ico"
+          URL: "https://ico.red-lang.org"
+        - Name: "Fullstack Technologies"
+          Weight: 4
+          Identifier: "fullstack"
+          URL: "https://fullstack.red-lang.org"
   fr:
     title: "Français"
     params:

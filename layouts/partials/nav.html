@@ -1,9 +1,14 @@
-<header class="w-full bg-rl-light-blue">
-    <div class="container mx-auto flex items-center justify-between py-4 px-8">
-        <span class="text-2l font-semibold">
-            <h1>Red</h1>
-        </span>
-        <nav class="flex items-center">
+<header id="main-nav" class="w-full bg-rl-light-blue">
+    <div class="container mx-auto flex flex-col md:flex-row items-center justify-between py-4 px-8">
+        <div class="text-2l font-semibold flex flex-row justify-between w-full">
+            <div><h1>Red</h1></div>
+            <div class="block md:hidden">
+                <button class="flex items-center px-3 py-2 border rounded text-blue-lighter border-blue-light hover:text-white hover:border-white" @click="toggleMenu">
+                    <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+                </button>
+            </div>
+        </div>
+        <nav class="items-start md:items-center flex-col md:flex-row w-full" :class="{ hidden: isMenuOpen, flex: !isMenuOpen }">
             {{- $currentPage := . -}}
             {{ range .Site.Menus.main -}}
                 <a class="nav-link {{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}" href="{{ .URL | relLangURL }}">{{ .Name }}</a>

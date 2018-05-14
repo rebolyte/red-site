@@ -1,7 +1,21 @@
 <section class="w-full bg-blue-darker text-sm">
     <div class="container mx-auto flex items-center justify-between py-2 px-4">
         <span class="font-semibold">
-            ecosystem / language
+            <div class="dropdown-container">
+                <nav>
+                    <div class="relative inline-block">
+                        <div class="px-1 py-2">Ecosystem</div>
+                        <div class="dropdown-menu hidden absolute">
+                            <ul class="submenu list-reset">
+                                {{ range .Site.Menus.ecosystem -}}
+                                    <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                                {{ end }}
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
             {{ if .IsTranslated }}
             {{ $currentLang := .Site.Language.Lang }}
             {{ range .Translations }}
@@ -14,9 +28,8 @@
         {{ end }}
         </span>
         <nav class="flex items-center">
-            {{- $currentPage := . -}}
             {{ range .Site.Menus.social -}}
-                <a class="text-grey no-underline ml-4" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+                <a class="text-grey no-underline ml-4" href="{{ .URL }}">{{ .Name }}</a>
             {{ end }}
         </nav>
     </div>

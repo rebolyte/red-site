@@ -3,19 +3,17 @@
             <div class="px-8 py-4">
                 <p class="font-semibold">Ecosystem</p>
                 <ul class="list-reset">
-                    <li>Red Language</li>
-                    <li>Red Foundation</li>
-                    <li>Red ICO</li>
-                    <li>Fullstack Technologies</li>
+                    {{ range .Site.Menus.ecosystem -}}
+                        <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                    {{ end }}
                 </ul>
             </div>
             <div class="md:col-span-2 px-8 py-4">
                 <p class="font-semibold">About Red</p>
                 <ul class="list-reset">
-                    <li>Documentation</li>
-                    <li>Blog</li>
-                    <li>Roadmap</li>
-                    <li>Download</li>
+                    {{ range .Site.Menus.main -}}
+                        <li><a href="{{ .URL | relLangURL }}">{{ .Name }}</a></li>
+                    {{ end }}
                 </ul>
             </div>
             <div class="px-8 py-4">
@@ -25,7 +23,9 @@
             </div>
         </div>
         <div class="w-full">
-            <p>social</p>
+            {{ range .Site.Menus.social -}}
+                <a class="text-grey no-underline ml-4" href="{{ .URL }}">{{ .Name }}</a>
+            {{ end }}
             <div>{{ .Site.Params.CopyrightHTML | safeHTML }}</div>
         </div>
     </footer>

@@ -82,7 +82,10 @@ module.exports = {
 		]
 	},
 	resolve: {
-		extensions: ['.ts', '.js']
+		extensions: ['.ts', '.js'],
+		alias: {
+			vue$: 'vue/dist/vue.esm.js'
+		}
 	},
 	plugins: [
 		// https://github.com/webpack-contrib/extract-text-webpack-plugin/issues/701
