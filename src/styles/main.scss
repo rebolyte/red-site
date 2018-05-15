@@ -65,6 +65,12 @@ body {
 	}
 }
 
+@media (max-width: config('screens.md')) {
+	.mobile\:hidden {
+		display: none;
+	}
+}
+
 @extends {
 	margin: 0px;
 }

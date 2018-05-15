@@ -8,7 +8,7 @@
                 </button>
             </div>
         </div>
-        <nav class="items-start md:items-center flex-col md:flex-row w-full" :class="{ hidden: isMenuOpen, flex: !isMenuOpen }">
+        <nav class="items-start md:items-center flex-col md:flex-row w-full md:flex" :class="{ 'mobile:hidden': !isMenuOpen }">
             {{- $currentPage := . -}}
             {{ range .Site.Menus.main -}}
                 <a class="nav-link {{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
