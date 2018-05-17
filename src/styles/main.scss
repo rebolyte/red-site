@@ -47,6 +47,15 @@ body {
 	@apply .text-blue-dark;
 }
 
+.dropdown-menu {
+	left: 0;
+	top: 2.1em;
+}
+
+.dropdown:hover .dropdown-menu {
+	display: block;
+}
+
 .bg-blue-gradient {
 	background-image: linear-gradient(to bottom, #3e4d6a, #212234);
 }

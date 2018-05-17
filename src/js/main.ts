@@ -16,3 +16,17 @@ new Vue({
 		}
 	}
 });
+
+new Vue({
+	el: '#ecosystem-nav',
+	data: {
+		isMenuOpen: false
+	},
+	methods: {
+		toggleMenu() {
+			if ('ontouchstart' in window) {
+				this.isMenuOpen = !this.isMenuOpen;
+			}
+		}
+	}
+});

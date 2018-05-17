@@ -1,14 +1,14 @@
 <section class="w-full bg-blue-darker text-sm">
     <div class="container mx-auto flex items-center justify-between py-2 px-4">
-        <span class="font-semibold">
-            <div class="dropdown-container">
-                <nav>
-                    <div class="relative inline-block">
-                        <div class="px-1 py-2">Ecosystem</div>
-                        <div class="dropdown-menu hidden absolute">
+        <div class="font-semibold">
+            <div class="w-32 relative inline-block mr-2">
+                <nav id="ecosystem-nav">
+                    <div class="dropdown relative bg-grey">
+                        <div class="px-1 py-2" @click="toggleMenu()">Ecosystem</div>
+                        <div class="dropdown-menu hidden absolute minw-full" :class="{ block: isMenuOpen }">
                             <ul class="submenu list-reset">
                                 {{ range .Site.Menus.ecosystem -}}
-                                    <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                                    <li><a class="block px-1 py-2 bg-grey hover:bg-white no-underline" href="{{ .URL }}">{{ .Name }}</a></li>
                                 {{ end }}
                             </ul>
                         </div>
@@ -19,15 +19,13 @@
             {{ if .IsTranslated }}
             {{ $currentLang := .Site.Language.Lang }}
             {{ range .Translations }}
-                <span>
-                    <a class="navbar-item lang" href="{{ .Permalink }}">
-                        {{ .Lang }}
-                    </a>
-                </span>
+                <a class="navbar-item lang" href="{{ .Permalink }}">
+                    {{ .Lang }}
+                </a>
             {{ end }}
         {{ end }}
-        </span>
-        <nav class="flex items-center">
+            </div>
+        <nav class="flex items-center mobile:hidden">
             {{ range .Site.Menus.social -}}
                 <a class="text-grey no-underline ml-4" href="{{ .URL }}">{{ .Name }}</a>
             {{ end }}
