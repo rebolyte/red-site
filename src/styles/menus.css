@@ -3,7 +3,7 @@
  */
 
 .nav-link {
-	@apply .block .mt-2 .text-lg .leading-normal .text-blue .no-underline;
+	@apply .block .mt-2 .text-lg .leading-normal .text-blue .no-underline .whitespace-no-wrap;
 }
 
 .nav-link:not(:last-child) {

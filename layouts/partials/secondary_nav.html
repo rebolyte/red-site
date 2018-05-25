@@ -1,13 +1,13 @@
-<section class="w-full bg-blue-darker text-sm">
+<section class="w-full bg-blue-darker">
     <div class="container mx-auto flex items-center justify-between py-2 px-4">
-        <div class="font-semibold">
+        <div class="font-semibold text-sm">
             <div class="w-32 relative inline-block mr-2">
                 <nav id="ecosystem-nav">
                     <div class="dropdown relative bg-grey">
                         <div class="px-1 py-2" @click="toggleMenu()">Ecosystem</div>
-                        <div class="dropdown-menu hidden absolute minw-full" :class="{ block: isMenuOpen }">
+                        <div class="dropdown-menu hidden absolute min-w-full" :class="{ block: isMenuOpen }">
                             <ul class="submenu list-reset">
-                                {{ range .Site.Menus.ecosystem -}}
+                                {{ range .Site.Params.navigation.ecosystem -}}
                                     <li><a class="block px-1 py-2 bg-grey hover:bg-white no-underline" href="{{ .URL }}">{{ .Name }}</a></li>
                                 {{ end }}
                             </ul>
@@ -16,18 +16,27 @@
                 </nav>
             </div>
 
-            {{ if .IsTranslated }}
-            {{ $currentLang := .Site.Language.Lang }}
-            {{ range .Translations }}
-                <a class="navbar-item lang" href="{{ .Permalink }}">
-                    {{ .Lang }}
-                </a>
-            {{ end }}
-        {{ end }}
+            <div class="w-32 relative inline-block">
+                <nav id="lang-nav">
+                    <div class="dropdown relative bg-grey">
+                        <div class="px-1 py-2" @click="toggleMenu()">Language</div>
+                        <div class="dropdown-menu hidden absolute min-w-full" :class="{ block: isMenuOpen }">
+                            <ul class="submenu list-reset">
+                                {{ range $.Site.Home.AllTranslations -}}
+                                    <li><a class="block px-1 py-2 bg-grey hover:bg-white no-underline" href="{{ .Permalink }}">
+                                        {{- partial "icon" (dict "icon" .Lang) -}}
+                                        {{ .Language.LanguageName }}
+                                    </a></li>
+                                {{ end }}
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
             </div>
+        </div>
         <nav class="flex items-center mobile:hidden">
-            {{ range .Site.Menus.social -}}
-                <a class="text-grey no-underline ml-4" href="{{ .URL }}">{{ .Name }}</a>
+            {{ range .Site.Params.navigation.social -}}
+                <a class="text-grey no-underline ml-4" href="{{ .URL }}" title="{{ .Name }}">{{ partial "icon" (dict "icon" .Identifier) }}</a>
             {{ end }}
         </nav>
     </div>

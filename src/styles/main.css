@@ -12,6 +12,7 @@
  * affect utilities
  */
 @import './menus';
+@import './svg-icons';
 
 @import 'tailwindcss/components';
 

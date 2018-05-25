@@ -3,7 +3,7 @@
             <div class="px-8 py-4">
                 <p class="font-semibold">Ecosystem</p>
                 <ul class="list-reset">
-                    {{ range .Site.Menus.ecosystem -}}
+                    {{ range .Site.Params.navigation.ecosystem -}}
                         <li><a href="{{ .URL }}">{{ .Name }}</a></li>
                     {{ end }}
                 </ul>
@@ -23,8 +23,8 @@
             </div>
         </div>
         <div class="w-full">
-            {{ range .Site.Menus.social -}}
-                <a class="text-grey no-underline ml-4" href="{{ .URL }}">{{ .Name }}</a>
+            {{ range .Site.Params.navigation.social -}}
+                <a class="text-grey no-underline ml-4" href="{{ .URL }}" title="{{ .Name }}">{{ partial "icon" (dict "icon" .Identifier) }}</a>
             {{ end }}
             <div>{{ .Site.Params.CopyrightHTML | safeHTML }}</div>
         </div>
