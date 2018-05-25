@@ -1,9 +1,28 @@
-@tailwind preflight;
+/* https://github.com/tailwindcss/tailwindcss/issues/449 */
 
-@tailwind components;
+/* https://github.com/tailwindcss/discuss/issues/92 */
 
-@tailwind utilities;
+/**
+ * Tailwind's preflight which resets the browser to be ready for Tailwind's utilities
+ */
+@import 'tailwindcss/preflight';
 
+/**
+ * Any custom component code. This comes before Tailwind's utilities to ensure the cascade doesn't
+ * affect utilities
+ */
+@import './menus';
+
+@import 'tailwindcss/components';
+
+/**
+ * Tailwind's utilities
+ */
+@import 'tailwindcss/utilities';
+
+/**
+* Custom styles/utilities that don't come out of the box with Tailwind.
+*/
 @font-face {
 	font-family: 'avenirHeavy';
 	src: url('/fonts/AvenirHeavy.ttf');
@@ -27,33 +46,6 @@ body {
 
 #logoLabel {
 	font-family: 'avenirHeavy', sans-serif;
-}
-
-.nav-link {
-	@apply .block .mt-2 .text-lg .leading-normal .text-blue .no-underline;
-}
-
-.nav-link:not(:last-child) {
-	@apply .mr-8;
-}
-
-@screen md {
-	.nav-link {
-		@apply .inline-block .mt-0;
-	}
-}
-
-.nav-link:hover {
-	@apply .text-blue-dark;
-}
-
-.dropdown-menu {
-	left: 0;
-	top: 2.1em;
-}
-
-.dropdown:hover .dropdown-menu {
-	display: block;
 }
 
 .bg-blue-gradient {

@@ -70,12 +70,6 @@ module.exports = {
 						options: {
 							sourceMap: ifDev()
 						}
-					},
-					{
-						loader: 'sass-loader',
-						options: {
-							sourceMap: ifDev()
-						}
 					}
 				]
 			}

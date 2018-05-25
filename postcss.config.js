@@ -1,4 +1,4 @@
 // https://github.com/tailwindcss/webpack-starter
 module.exports = {
-	plugins: [require('tailwindcss')('./tailwind.js')]
+	plugins: [require('postcss-import'), require('tailwindcss')('./tailwind.js')]
 };
