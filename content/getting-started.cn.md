@@ -1,5 +1,5 @@
 ---
-title: Getting Started
+title: 入门
 ---
 
 Content in Chinese.

@@ -4,7 +4,7 @@
             <div class="w-32 relative inline-block mr-2">
                 <nav id="ecosystem-nav">
                     <div class="dropdown relative bg-grey">
-                        <div class="px-1 py-2" @click="toggleMenu()">Ecosystem</div>
+                        <div class="px-1 py-2" @click="toggleMenu()">{{ i18n "ecosystem" }}</div>
                         <div class="dropdown-menu hidden absolute min-w-full" :class="{ block: isMenuOpen }">
                             <ul class="submenu list-reset">
                                 {{ range .Site.Params.navigation.ecosystem -}}
@@ -19,7 +19,7 @@
             <div class="w-32 relative inline-block">
                 <nav id="lang-nav">
                     <div class="dropdown relative bg-grey">
-                        <div class="px-1 py-2" @click="toggleMenu()">Language</div>
+                        <div class="px-1 py-2" @click="toggleMenu()">{{ i18n "language" }}</div>
                         <div class="dropdown-menu hidden absolute min-w-full" :class="{ block: isMenuOpen }">
                             <ul class="submenu list-reset">
                                 {{ range $.Site.Home.AllTranslations -}}

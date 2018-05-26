@@ -17,6 +17,7 @@ languages:
   en:
     LanguageName: "English"
     params:
+      Title: "Red Language"
       CopyrightHTML: "Copyright &#xA9; 2018 FullStack Technologies Ltd"
     menu:
       main:
@@ -47,6 +48,7 @@ languages:
   fr:
     LanguageName: "Français"
     params:
+      Title: "Red Langue"
       CopyrightHTML: "Droits d'auteur &#xA9; 2018 FullStack Technologies Ltd"
     blackfriday:
       angledQuotes: true
@@ -72,37 +74,38 @@ languages:
           Weight: 6
           Identifier: "download"
           URL: "/download/"
-        - Name: "Getting Started"
+        - Name: "Commencer"
           Weight: 7
           Identifier: "gettingstarted"
           URL: "/getting-started/"
   cn:
     LanguageName: "简体中文"
     params:
+      Title: "Red 语言"
       CopyrightHTML: "Copyright &#xA9; 2018 FullStack Technologies Ltd"
     menu:
       main:
-        - Name: "About"
+        - Name: "关于"
           Weight: 2
           Identifier: "about"
           URL: "/about/"
-        - Name: "Documentation"
+        - Name: "文件"
           Weight: 3
           Identifier: "docs"
           URL: "https://github.com/red/red"
-        - Name: "Blog"
+        - Name: "博客"
           Weight: 4
           Identifier: "blog"
           URL: "/blog/"
-        - Name: "Roadmap"
+        - Name: "路线图"
           Weight: 5
           Identifier: "roadmap"
           URL: "/roadmap/"
-        - Name: "Download"
+        - Name: "下载"
           Weight: 6
           Identifier: "download"
           URL: "/download/"
-        - Name: "Getting Started"
+        - Name: "入门"
           Weight: 7
           Identifier: "gettingstarted"
           URL: "/getting-started/"
