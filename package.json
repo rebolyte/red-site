@@ -5,7 +5,7 @@
 	"license": "Private, all rights reserved",
 	"private": true,
 	"scripts": {
-		"clean": "shx rm -rf public && shx rm -f static/styles/*.{css,map} && shx rm -f static/js/*.{js,map} && shx rm -f data/*.json",
+		"clean": "shx rm -rf public && shx rm -f static/styles/*.{css,map} && shx rm -f static/js/*.{js,map}",
 		"predev": "yarn run clean",
 		"dev": "cross-env NODE_ENV=development webpack --mode development --progress && hugo",
 		"prewatch": "yarn run clean",

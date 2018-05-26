@@ -20,10 +20,6 @@ languages:
       CopyrightHTML: "Copyright &#xA9; 2018 FullStack Technologies Ltd"
     menu:
       main:
-        - Name: "Home"
-          Weight: 1
-          Identifier: "home"
-          URL: "/"
         - Name: "About"
           Weight: 2
           Identifier: "about"
@@ -44,6 +40,10 @@ languages:
           Weight: 6
           Identifier: "download"
           URL: "/download/"
+        - Name: "Getting Started"
+          Weight: 7
+          Identifier: "gettingstarted"
+          URL: "/getting-started/"
   fr:
     LanguageName: "Français"
     params:
@@ -52,10 +52,6 @@ languages:
       angledQuotes: true
     menu:
       main:
-        - Name: "Accueil"
-          Weight: 1
-          Identifier: "home"
-          URL: "/fr/"
         - Name: "À propos"
           Weight: 2
           Identifier: "about"
@@ -76,16 +72,16 @@ languages:
           Weight: 6
           Identifier: "download"
           URL: "/download/"
+        - Name: "Getting Started"
+          Weight: 7
+          Identifier: "gettingstarted"
+          URL: "/getting-started/"
   cn:
     LanguageName: "简体中文"
     params:
       CopyrightHTML: "Copyright &#xA9; 2018 FullStack Technologies Ltd"
     menu:
       main:
-        - Name: "主页"
-          Weight: 1
-          Identifier: "home"
-          URL: "/cn/"
         - Name: "About"
           Weight: 2
           Identifier: "about"
@@ -106,6 +102,10 @@ languages:
           Weight: 6
           Identifier: "download"
           URL: "/download/"
+        - Name: "Getting Started"
+          Weight: 7
+          Identifier: "gettingstarted"
+          URL: "/getting-started/"
 
 params:
   navigation:

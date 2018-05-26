@@ -2,22 +2,42 @@
  * PRIMARY NAV
  */
 
-.nav-link {
-	@apply .block .mt-2 .text-lg .leading-normal .text-blue .no-underline .whitespace-no-wrap;
-}
-
-.nav-link:not(:last-child) {
-	@apply .mr-8;
+.nav-item {
+	@apply .block .mt-2;
 }
 
 @screen md {
-	.nav-link {
+	.nav-item {
 		@apply .inline-block .mt-0;
+	}
+
+	.nav-item:not(:last-child) {
+		@apply .mr-2;
 	}
 }
 
+@screen lg {
+	.nav-item:not(:last-child) {
+		@apply .mr-8;
+	}
+}
+
+.nav-link {
+	@apply .text-lg .leading-normal .text-rl-gray .no-underline .whitespace-no-wrap;
+}
+
 .nav-link:hover {
-	@apply .text-blue-dark;
+	@apply .text-rl-gray-lighter;
+}
+
+.nav-cta {
+	@apply .text-lg .leading-normal .no-underline .whitespace-no-wrap .text-rl-red;
+	@apply .border .border-solid .rounded-full .border-rl-red;
+	@apply .px-6 .py-2;
+}
+
+.nav-cta:hover {
+	@apply .text-rl-red-lighter .border-rl-red-lighter;
 }
 
 /**

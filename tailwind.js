@@ -132,8 +132,9 @@ let colors = {
 	'rl-med-blue': '#344360',
 	'rl-light-blue': '#3e4c69',
 	'rl-red': '#dd443b',
+	'rl-red-lighter': '#da5048',
 	'rl-gray': '#999999',
-	'rl-light-gray': '#eee'
+	'rl-gray-lighter': '#eee'
 };
 
 module.exports = {
