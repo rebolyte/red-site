@@ -41,11 +41,11 @@
 	src: url('/fonts/AvenirBook.ttf');
 }
 
-body {
+.avenir {
 	font-family: 'avenirMedium', sans-serif;
 }
 
-#logoLabel {
+.avenir-heavy {
 	font-family: 'avenirHeavy', sans-serif;
 }
 
