@@ -1,14 +1,14 @@
-<section class="bg-black">
+<section class="">
     <div class="container mx-auto px-8 grid grid-columns-1 md:grid-columns-2
     {{- with .Params.image_position -}}
         {{- if eq "left" . }} md:grid-col-2-reverse{{- end -}}
     {{- end -}}">
-        <div class="px-8 py-4 bg-blue-darker">
+        <div class="px-8 py-4">
             <img src="{{ relURL .Params.image }}" />
         </div>
-        <div class="px-8 py-4 bg-teal">
+        <div class="px-8 py-4">
             {{- with .Params.heading -}}
-                <p class="font-semibold">{{ markdownify . }}</p>
+                <h3 class="font-semibold text-2xl text-rl-gray rl-l-title-underline">{{ markdownify . }}</h3>
             {{- end -}}
             {{- with .Params.content -}}
                 <p>{{ markdownify . }}</p>

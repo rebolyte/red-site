@@ -26,9 +26,9 @@
                     {{ end }}>
                     <a
                     {{ if eq (add $index 1) $len }}
-                    class="nav-cta"
+                    class="nav-cta dim"
                     {{ else }}
-                    class="nav-link"
+                    class="nav-link dim"
                     {{ end }}
                     href="{{ .URL | relLangURL }}">
                     {{ .Name }}

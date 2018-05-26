@@ -11,6 +11,7 @@
  * Any custom component code. This comes before Tailwind's utilities to ensure the cascade doesn't
  * affect utilities
  */
+@import './utils';
 @import './menus';
 @import './svg-icons';
 
@@ -75,4 +76,22 @@
 
 @extends {
 	margin: 0px;
+}
+
+.rl-l-title-underline::after {
+	content: ' ';
+	display: block;
+	margin: 7px 0 16px 0;
+	width: 25px;
+	height: 4px;
+	background-color: config('colors.rl-red');
+}
+
+.rl-ctr-title-underline::after {
+	content: ' ';
+	display: block;
+	margin: 7px auto 16px auto;
+	width: 45px;
+	height: 4px;
+	background-color: config('colors.rl-red');
 }

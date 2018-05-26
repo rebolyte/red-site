@@ -5,7 +5,7 @@
                 <p class="font-semibold">{{ i18n "ecosystem" }}</p>
                 <ul class="list-reset">
                     {{ range .Site.Params.navigation.ecosystem -}}
-                        <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                        <li><a class="no-underline text-rl-gray dim" href="{{ .URL }}">{{ .Name }}</a></li>
                     {{ end }}
                 </ul>
             </div>
@@ -13,7 +13,7 @@
                 <p class="font-semibold">{{ i18n "about" }}</p>
                 <ul class="list-reset">
                     {{ range .Site.Menus.main -}}
-                        <li><a href="{{ .URL | relLangURL }}">{{ .Name }}</a></li>
+                        <li><a class="no-underline text-rl-gray dim" href="{{ .URL | relLangURL }}">{{ .Name }}</a></li>
                     {{ end }}
                 </ul>
             </div>
@@ -23,11 +23,11 @@
                 <input type="submit" value="{{ i18n "submitBtn" }}">
             </div>
         </div>
-        <div class="w-full">
+        <div class="container mx-auto px-8 py-4">
             {{ range .Site.Params.navigation.social -}}
-                <a class="text-grey no-underline ml-4" href="{{ .URL }}" title="{{ .Name }}">{{ partial "icon" (dict "icon" .Identifier) }}</a>
+                <a class="text-grey no-underline mr-4" href="{{ .URL }}" title="{{ .Name }}">{{ partial "icon" (dict "icon" .Identifier) }}</a>
             {{ end }}
-            <div>{{ .Site.Params.CopyrightHTML | safeHTML }}</div>
+            <div class="mt-4 mb-8">{{ .Site.Params.CopyrightHTML | safeHTML }}</div>
         </div>
     </footer>
 <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
