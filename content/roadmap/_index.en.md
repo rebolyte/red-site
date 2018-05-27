@@ -1,5 +1,6 @@
 ---
 title: Roadmap
+subtitle: This is the current roadmap for Red 1.0. Please find a more detailed roadmap on our Trello board.
 roadmapEntries:
   - heading: Entry 1
     text: This is the description of the first milestone.

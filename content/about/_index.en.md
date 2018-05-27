@@ -1,5 +1,6 @@
 ---
 title: About
+subtitle: Red is a powerful programming language, inspired by REBOL and built to empower.
 blocks:
   - template: "media-feature"
     background_style: "dark"
@@ -29,84 +30,64 @@ blocks:
     grid_items:
       - title: Friendly Syntax
         icon: test
-        description: >
-          Description goes here.
+        description: Description goes here.
       - title: Homoiconic
         icon: test
-        description: >
-          Description goes here.
+        description: Description goes here.
       - title: Reactive and Symbolic
         icon: test
-        description: >
-          Description goes here.
+        description: Description goes here.
       - title: Object Support
         icon: test
-        description: >
-          Description goes here.
+        description: Description goes here.
       - title: Gradual & Multi-typing
         icon: test
-        description: >
-          Description goes here.
+        description: Description goes here.
       - title: Macros System
         icon: test
-        description: >
-          Description goes here.
+        description: Description goes here.
       - title: Built-in Datatypes
         icon: test
-        description: >
-          Description goes here.
+        description: Description goes here.
       - title: Native Code
         icon: test
-        description: >
-          Description goes here.
+        description: Description goes here.
       - title: Cross-compilation
         icon: test
-        description: >
-          Description goes here.
+        description: Different description snuck in this one somehow.
       - title: No Dependencies
         icon: test
-        description: >
-          Description goes here.
+        description: Description goes here.
       - title: Parallelism Support
         icon: test
-        description: >
-          Description goes here.
+        description: Description goes here.
       - title: Low-level Programming
         icon: test
-        description: >
-          Description goes here.
+        description: Description goes here.
       - title: PEG Parser DSL
         icon: test
-        description: >
-          Description goes here.
+        description: Description goes here.
       - title: Native GUI System
         icon: test
-        description: >
-          Description goes here.
+        description: Description goes here. It would go here. Move right along.
       - title: Bridging to the JVM
         icon: test
-        description: >
-          Description goes here.
+        description: Description goes here.
       - title: High-level Scripting
         icon: test
-        description: >
-          Description goes here.
+        description: Description goes here.
       - title: Visual Studio Plugin
         icon: test
-        description: >
-          Description goes here.
+        description: Description goes here.
       - title: Highly Embeddable
         icon: test
-        description: >
-          Description goes here.
+        description: Description goes here.
       - title: Garbage Collected
         icon: test
-        description: >
-          Description goes here.
+        description: Description goes here.
       - title: Single File
         icon: test
-        description: >
-          Description goes here.
+        description: Description goes here.
   - template: "call-to-action"
     heading: "Download Red"
     subheading: "It's easy"

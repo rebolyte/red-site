@@ -3,7 +3,7 @@
 {{ end }}
 
 {{ define "main" }}
-    <h1>{{ .Title }}</h1>
+    {{ partial "page-title" (dict "title" .Title "subtitle" .Params.subtitle)}}
 
     {{ .Content }}
 
