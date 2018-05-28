@@ -12,7 +12,9 @@
             {{- end -}}
         </div>
         <div class="px-8 py-4">
-            <img src="{{ relURL .Params.image }}" />
+            {{ if isset .Params "image" }}
+                <img src="{{ relURL .Params.image }}" />
+            {{ end }}
         </div>
     </div>
 </section>

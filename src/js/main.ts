@@ -44,3 +44,18 @@ new Vue({
 		}
 	}
 });
+
+Vue.component('accordion-toggle', {
+	template: `
+		<div :class="{ 'is-open': toggle }" @click="toggle = !toggle">
+			<slot></slot>
+		</div>
+	`,
+	data() {
+		return { toggle: false };
+	}
+});
+
+new Vue({
+	el: '#accordion'
+});

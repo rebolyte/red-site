@@ -13,6 +13,7 @@
  */
 @import './utils';
 @import './menus';
+@import './accordion';
 @import './svg-icons';
 
 @import 'tailwindcss/components';

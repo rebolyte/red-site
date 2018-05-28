@@ -1,0 +1,15 @@
+<section class="py-4">
+    <div class="container mx-auto mt-12">
+        <div id="accordion">
+            {{ range .Params.accordion_items }}
+                <accordion-toggle class="w-full p-8 mb-4 bg-rl-gray-lightest rounded-lg has-dropdown">
+                    <div class="flex justify-between px-2 my-4">
+                        <h4 class="text-lg text-rl-gray font-bold">{{ .title }}</h4>
+                        <div class="arrow"></div>
+                    </div>
+                    <p class="px-2 text-rl-gray description">{{ .description }}</p>
+                </accordion-toggle>
+            {{ end }}
+        </div>
+    </div>
+</section>

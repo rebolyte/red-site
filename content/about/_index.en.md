@@ -23,9 +23,6 @@ blocks:
     heading: "How Many Features, You Ask?"
     content: >
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ultrices magna in vehicula imperdiet. Nunc pellentesque ligula et vehicula elementum. Suspendisse faucibus fringilla neque, ut lacinia erat pulvinar sit amet. Aliquam vel ex erat. Nulla ultrices tellus enim. Proin at tristique tortor. Nullam ut tellus eu ipsum tristique pretium dictum vitae ex. Suspendisse euismod finibus odio, vel aliquet lorem. Proin condimentum id tortor in eleifend. Suspendisse varius euismod viverra. Phasellus sit amet nisi eget nulla tincidunt euismod nec eget leo. Curabitur ornare quam mattis magna pharetra dapibus. Aliquam placerat diam eu erat lobortis laoreet. Nunc eleifend convallis neque non mollis. Curabitur condimentum diam ante, sed laoreet quam rutrum in.
-    image: "http://via.placeholder.com/500x280"
-    image_position: "right"
-    image_shadow: true
   - template: "grid-list"
     grid_items:
       - title: Friendly Syntax
@@ -88,10 +85,23 @@ blocks:
       - title: Single File
         icon: test
         description: Description goes here.
+  - template: "accordion"
+    accordion_items:
+      - title: How do I install Red?
+        description: >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et lorem sed quam porta rhoncus. Pellentesque porttitor nisi sit amet tortor tristique, nec euismod odio laoreet. Vivamus non elementum sem, non sodales dolor.
+      - title: How is Red supported?
+        description: Description goes here.
+      - title: Where is Red going?
+        description: Description goes here.
   - template: "call-to-action"
     heading: "Download Red"
     subheading: "It's easy"
     content: "Guaranteed to download in 3 seconds or less, or your money back."
     button_url: "https://red-lang.org"
     button_text: "Download"
+  - template: "narrow-cta"
+    description: "Download the Latest Stable Version of Red"
+    link_url: "/download"
+    link_text: "Download Red 0.6.3"
 ---
