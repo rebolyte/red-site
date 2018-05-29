@@ -10,7 +10,7 @@
             {{- with .Params.content -}}
             <p class="mb-4 text-rl-gray">{{ markdownify . }}</p>
             {{- end -}}
-            <a class="text-lg leading-normal no-underline whitespace-no-wrap text-white bg-rl-red rounded-full px-8 py-2 dim" href="{{ .Params.button_url }}">{{ .Params.button_text }}</a>
+            <a class="red-btn" href="{{ .Params.button_url }}">{{ .Params.button_text }}</a>
         </div>
         <div class="px-2 md:px-8 py-4">
             {{ if isset .Params "image" }}

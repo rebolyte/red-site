@@ -10,7 +10,8 @@ module.exports = {
 		],
 		indentation: 'tab',
 		'length-zero-no-unit': null,
-		'declaration-colon-newline-after': null
+		'declaration-colon-newline-after': null,
+		'value-list-comma-newline-after': null
 	},
 	ignoreFiles: 'public/**/*.css'
 };

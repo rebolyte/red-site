@@ -1,16 +1,31 @@
 <article class="mb-4">
-    <a href="{{ .RelPermalink }}">
-        <h2>
-            {{ .Title }}
-        </h2>
-    </a>
-    <div>Posted {{ .Date.Format "2 January, 2006" }}</div>
-    <p>
-        {{ .Summary }}
-    </p>
-    {{ if .Truncated }}
-    <p class="read-more-anchor">
-        <a class="link beige" href="{{ .RelPermalink }}">Read the full article</a>
-    </p>
-    {{ end }}
+    <div class="max-w-md rounded overflow-hidden shadow-lg">
+        <a href="{{ .RelPermalink }}">
+            {{ if and (isset .Params "hero_type") (isset .Params "hero_src") }}
+                <div class="text-center">
+                    {{ if (eq .Params.hero_type "image") }}
+                        <div class="h-64 bg-center bg-no-repeat bg-cover" style="background-image: url('{{ .Params.hero_src }}');"></div>
+                    {{ end }}
+                    {{ if (eq .Params.hero_type "video") }}
+                        {{ .Params.hero_src | safeHTML }}
+                    {{ end }}
+                </div>
+            {{ else }}
+                <div class="h-64 bg-center bg-no-repeat bg-cover" style="background-image: url('http://via.placeholder.com/800x480');"></div>
+            {{ end }}
+        </a>
+        <div class="px-6 py-4">
+            <div class="mb-2"><a class="font-bold text-grey-darker text-2xl no-underline" href="{{ .RelPermalink }}">{{ .Title }}</a></div>
+            <div class="text-rl-gray mb-2">{{ .Date.Format "2 January, 2006" }} | By {{ .Params.author }}</div>
+            <p class="text-grey-darker text-base">{{ .Summary }}</p>
+        </div>
+        <p class="px-6 py-4 read-more-anchor">
+            <a class="red-btn-outline" href="{{ .RelPermalink }}">Read More</a>
+        </p>
+        <div class="px-6 py-4">
+            {{ range .Params.tags }}
+                <span class="tag">#{{ . }}</span>
+            {{ end }}
+        </div>
+    </div>
 </article>

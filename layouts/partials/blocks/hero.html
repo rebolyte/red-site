@@ -5,9 +5,9 @@
     {{- end -}}">
         <div class="p-8">
             {{- with .Params.heading -}}<h1 class="mb-2">{{ markdownify . }}</h1>{{- end -}}
-            {{- with .Params.content -}}<p class="mb-4">{{ markdownify . }}</p>{{- end -}}
+            {{- with .Params.content -}}<p>{{ markdownify . }}</p>{{- end -}}
             {{- if and .Params.button_url .Params.button_text -}}
-                <a class="no-underline bg-red hover:bg-red-dark text-white font-bold py-2 px-4 rounded-full" href="{{ .Params.button_url }}">{{ .Params.button_text }}</a>
+                <a class="red-btn" href="{{ .Params.button_url }}">{{ .Params.button_text }}</a>
             {{- end -}}
         </div>
         <div class="p-8 text-black bg-blue-lightest">

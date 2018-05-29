@@ -1,7 +1,8 @@
 ---
 date: 2017-04-11T15:02:07-05:00
 title: first
-tags: 
+author: Gregg Irwin
+tags:
   - blockchain
   - android
 ---
