@@ -8,7 +8,7 @@
                         <div class="dropdown-menu absolute min-w-full" :class="{ block: isMenuOpen }">
                             <ul class="submenu list-reset">
                                 {{ range .Site.Params.navigation.ecosystem -}}
-                                    <li><a class="block px-1 py-2 bg-grey hover:bg-white no-underline" href="{{ .URL }}">{{ .Name }}</a></li>
+                                    <li><a class="block px-1 py-2 bg-grey hover:bg-white text-black no-underline" href="{{ .URL }}">{{ .Name }}</a></li>
                                 {{ end }}
                             </ul>
                         </div>
@@ -23,7 +23,7 @@
                         <div class="dropdown-menu absolute min-w-full" :class="{ block: isMenuOpen }">
                             <ul class="submenu list-reset">
                                 {{ range $.Site.Home.AllTranslations -}}
-                                    <li><a class="block px-1 py-2 bg-grey hover:bg-white no-underline" href="{{ .Permalink }}">
+                                    <li><a class="block px-1 py-2 bg-grey hover:bg-white text-black no-underline" href="{{ .Permalink }}">
                                         {{- partial "icon" (dict "icon" .Lang) -}}
                                         {{ .Language.LanguageName }}
                                     </a></li>

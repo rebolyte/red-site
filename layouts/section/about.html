@@ -12,25 +12,25 @@
         {{- if eq .template "1up" -}}{{ partial "blocks/1up" (dict "Params" .) }}{{- end -}}
         {{- if eq .template "2up" -}}{{ partial "blocks/2up" (dict "Params" .) }}{{- end -}}
         {{- if eq .template "grid-list" -}}{{ partial "blocks/grid-list" (dict "Params" .) }}{{- end -}}
-        {{- end -}}
-        
-        
-        {{ .Content }}
-        
-        <div class="bg-sun">
-            {{- range .Params.blocks -}}
+    {{- end -}}
+
+
+    {{ .Content }}
+
+    <div class="bg-sun">
+        {{- range .Params.blocks -}}
             {{- if eq .template "accordion" -}}{{ partial "blocks/accordion" (dict "Params" .) }}{{- end -}}
-            {{- end -}}
-        </div>
-        
-        <!-- <img src="/images/gray-curve.svg"> -->
-        
-        <div class="bg-blue-curve-top w-full">
-            {{- range .Params.blocks -}}
+        {{- end -}}
+    </div>
+
+    <!-- <img src="/images/gray-curve.svg"> -->
+
+    <div class="bg-blue-curve-top w-full">
+        {{- range .Params.blocks -}}
             {{- if eq .template "action-feature" -}}{{ partial "blocks/action-feature" (dict "Params" .) }}{{- end -}}
             {{- if eq .template "narrow-cta" -}}{{ partial "blocks/narrow-cta" (dict "Params" .) }}{{- end -}}
-            {{- end -}}
-        </div>
+        {{- end -}}
+    </div>
 
 </div>
 

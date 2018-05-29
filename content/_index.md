@@ -31,4 +31,17 @@ blocks:
   - template: "1up"
     heading: "A Language that Speaks for Itself"
     content: "code samples"
+  - template: "action-feature"
+    background_style: "dark"
+    heading: "The Red Foundation is Making It Easier to Build Amazing Products with Red."
+    content: >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et lorem sed quam porta rhoncus. Pellentesque porttitor nisi sit amet tortor tristique, nec euismod odio laoreet. Vivamus non elementum sem, non sodales dolor.
+    image: "http://via.placeholder.com/500x280"
+    image_position: "right"
+    button_text: "Learn More"
+    button_url: "https://foundation.red-lang.org"
+  - template: "narrow-cta"
+    description: "Download the Latest Stable Version of Red"
+    link_url: "/download"
+    link_text: "Download Red 0.6.3"
 ---

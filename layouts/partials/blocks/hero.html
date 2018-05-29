@@ -4,8 +4,8 @@
         {{- if eq "left" . }} md:grid-col-2-reverse{{- end -}}
     {{- end -}}">
         <div class="p-8">
-            {{- with .Params.heading -}}<h1>{{ markdownify . }}</h1>{{- end -}}
-            {{- with .Params.content -}}<p>{{ markdownify . }}</p>{{- end -}}
+            {{- with .Params.heading -}}<h1 class="mb-2">{{ markdownify . }}</h1>{{- end -}}
+            {{- with .Params.content -}}<p class="mb-4">{{ markdownify . }}</p>{{- end -}}
             {{- if and .Params.button_url .Params.button_text -}}
                 <a class="no-underline bg-red hover:bg-red-dark text-white font-bold py-2 px-4 rounded-full" href="{{ .Params.button_url }}">{{ .Params.button_text }}</a>
             {{- end -}}

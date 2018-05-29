@@ -14,7 +14,7 @@
         </div>
         <div class="px-2 md:px-8 py-4">
             {{ if isset .Params "image" }}
-                <img src="{{ relURL .Params.image }}" />
+                <img class="shadow-blurred" src="{{ relURL .Params.image }}" />
             {{ end }}
         </div>
     </div>
