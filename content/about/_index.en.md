@@ -94,6 +94,24 @@ blocks:
         description: Description goes here.
       - title: Where is Red going?
         description: Description goes here.
+  - template: "action-feature"
+    background_style: "dark"
+    heading: "The Red Foundation is Making It Easier to Build Amazing Products with Red."
+    content: >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et lorem sed quam porta rhoncus. Pellentesque porttitor nisi sit amet tortor tristique, nec euismod odio laoreet. Vivamus non elementum sem, non sodales dolor.
+    image: "http://via.placeholder.com/500x280"
+    image_position: "right"
+    button_text: "Learn More"
+    button_url: "https://foundation.red-lang.org"
+  - template: "action-feature"
+    background_style: "dark"
+    heading: "The RED Token is Powering a Revolutionary New Kind of Blockchain."
+    content: >
+      Integer ut aliquam est. Vestibulum pretium sit amet tortor vel sagittis. Mauris quis ex nisl. Nam vel interdum tortor. Aenean auctor metus erat, non congue nisi tempus at. Pellentesque convallis lacus nulla, nec ullamcorper velit pharetra eu. Suspendisse dapibus sit amet nisl gravida tincidunt. Ut id aliquam diam. Sed dui ex, tristique eu diam nec, tincidunt ullamcorper urna. Aliquam libero nulla, convallis nec mauris nec, euismod finibus ipsum.
+    image: "http://via.placeholder.com/500x280"
+    image_position: "left"
+    button_text: "Learn More"
+    button_url: "https://ico.red-lang.org"
   - template: "call-to-action"
     heading: "Download Red"
     subheading: "It's easy"

@@ -9,7 +9,8 @@ module.exports = {
 			}
 		],
 		indentation: 'tab',
-		'length-zero-no-unit': null
+		'length-zero-no-unit': null,
+		'declaration-colon-newline-after': null
 	},
 	ignoreFiles: 'public/**/*.css'
 };

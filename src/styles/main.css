@@ -52,7 +52,19 @@
 }
 
 .bg-blue-gradient {
-	background-image: linear-gradient(to bottom, #3e4d6a, #212234);
+	background-image: linear-gradient(
+		to bottom,
+		config('colors.rl-light-blue'),
+		config('colors.rl-deep-blue')
+	);
+}
+
+.bg-blue-gradient-reverse {
+	background-image: linear-gradient(
+		to top,
+		config('colors.rl-light-blue'),
+		config('colors.rl-deep-blue')
+	);
 }
 
 @responsive {
@@ -95,4 +107,21 @@
 	width: 45px;
 	height: 4px;
 	background-color: config('colors.rl-red');
+}
+
+.bg-blue-curve-top {
+	/* Note that the fill color for the curve here must match the page background color */
+
+	background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1440 1114" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M1440.353-.932H-.462v192s91.43-96.47 748.423-91.498C1375.97 104.323 1440.353-.932 1440.353-.932z" fill="#eee"/></svg>'),
+		linear-gradient(to top, config('colors.rl-light-blue'), config('colors.rl-deep-blue'));
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	padding-top: 12vw;
+}
+
+.bg-sun {
+	background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="738" height="738"><circle cx="420" cy="319" r="344" fill="#ECBB34" fill-opacity=".25" fill-rule="evenodd" stroke="#ECBB34" stroke-opacity=".1" stroke-width="50" transform="translate(-51 50)"/></svg>');
+	background-repeat: no-repeat;
+	background-size: 640px;
+	background-position: left top;
 }
