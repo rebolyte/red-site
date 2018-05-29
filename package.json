@@ -9,7 +9,7 @@
 		"predev": "yarn run clean",
 		"dev": "cross-env NODE_ENV=development webpack --mode development --progress && hugo",
 		"prewatch": "yarn run clean",
-		"watch": "concurrently 'cross-env NODE_ENV=development webpack --mode development --progress --watch' 'hugo server --disableFastRender'",
+		"watch": "concurrently \"cross-env NODE_ENV=development webpack --mode development --progress --watch\" \"hugo server --disableFastRender\"",
 		"start": "yarn run watch",
 		"prebuild": "yarn run clean",
 		"build": "cross-env NODE_ENV=production webpack --mode production --progress && hugo",
