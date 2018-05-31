@@ -46,6 +46,8 @@ new Vue({
 });
 
 Vue.component('accordion-toggle', {
+	// &#x25B2; // up
+	// &#x25BC; // down
 	template: `
 		<div :class="{ 'is-open': toggle }" @click="toggle = !toggle">
 			<slot></slot>

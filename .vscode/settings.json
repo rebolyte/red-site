@@ -30,5 +30,6 @@
 	"css.validate": false, // Disable style built-in lint
 	"scss.validate": false,
 	"stylelint.enable": true, // Enable stylelint
-	"eslint.validate": ["javascript", "javascriptreact", "vue"]
+	"eslint.validate": ["javascript", "javascriptreact", "vue"],
+	"eslint.packageManager": "yarn"
 }
