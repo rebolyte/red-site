@@ -19,10 +19,11 @@
             <div class="w-32 relative inline-block">
                 <nav id="lang-nav">
                     <div class="dropdown relative bg-grey">
-                        <div class="px-1 py-2" @click="toggleMenu()">{{ i18n "language" }}</div>
+                        {{ $home := .Site.Home }}
+                        <div class="px-1 py-2" @click="toggleMenu()">{{- partial "icon" (dict "icon" .Lang) -}} {{ $home.Language.LanguageName }}</div>
                         <div class="dropdown-menu absolute min-w-full" :class="{ block: isMenuOpen }">
                             <ul class="submenu list-reset">
-                                {{ range $.Site.Home.AllTranslations -}}
+                                {{ range $home.Translations -}}
                                     <li><a class="block px-1 py-2 bg-grey hover:bg-white text-black no-underline" href="{{ .Permalink }}">
                                         {{- partial "icon" (dict "icon" .Lang) -}}
                                         {{ .Language.LanguageName }}
