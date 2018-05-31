@@ -6,6 +6,7 @@ pluralizeListTitles: false
 enableRobotsTXT: true
 defaultContentLanguage: "en"
 enableMissingTranslationPlaceholders: true
+paginate: 5 # Number of posts per page
 
 permalinks:
   blog: /:section/:year/:month/:slug/
