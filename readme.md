@@ -35,7 +35,7 @@ or just
 
 ```
 $ git submodule update --remote --merge
-$ git commit
+$ git commit -a - m "submodule updated"
 ```
 
 To push changes made in theme submodule:
