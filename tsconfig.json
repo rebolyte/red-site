@@ -1,10 +1,10 @@
 {
-  "include": ["./src/js/**/*"],
-  "compilerOptions": {
-    "module": "es2015",
-    "moduleResolution": "node",
-    "target": "es5",
-    "sourceMap": true,
-    "allowJs": true
-  }
+	"extends": "./themes/hugo-featherweight/tsconfig",
+	"compilerOptions": {
+		"baseUrl": ".",
+		"paths": {
+			"@npm/*": ["themes/hugo-featherweight/node_modules/*"],
+			"@theme/*": ["themes/hugo-featherweight/src/js/*"]
+		}
+	},
 }

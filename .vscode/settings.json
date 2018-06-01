@@ -30,6 +30,9 @@
 	"css.validate": false, // Disable style built-in lint
 	"scss.validate": false,
 	"stylelint.enable": true, // Enable stylelint
+	"eslint.options": {
+		"configFile": "themes/hugo-featherweight/.eslintrc.json"
+	},
 	"eslint.validate": ["javascript", "javascriptreact", "vue"],
 	"eslint.packageManager": "yarn"
 }

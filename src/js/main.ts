@@ -1,53 +1,10 @@
-import Vue from 'vue';
-import { format } from 'date-fns';
-
-import '../styles/main.css';
-
-console.log('this is the JS', format(new Date(2014, 1, 11), 'MM/DD/YYYY'));
-
-new Vue({
-	el: '#main-nav',
-	data: {
-		isMenuOpen: false
-	},
-	methods: {
-		toggleMenu() {
-			this.isMenuOpen = !this.isMenuOpen;
-		}
-	}
-});
-
-new Vue({
-	el: '#ecosystem-nav',
-	data: {
-		isMenuOpen: false
-	},
-	methods: {
-		toggleMenu() {
-			if ('ontouchstart' in window) {
-				this.isMenuOpen = !this.isMenuOpen;
-			}
-		}
-	}
-});
-
-new Vue({
-	el: '#lang-nav',
-	data: {
-		isMenuOpen: false
-	},
-	methods: {
-		toggleMenu() {
-			if ('ontouchstart' in window) {
-				this.isMenuOpen = !this.isMenuOpen;
-			}
-		}
-	}
-});
+// TODO: Update these to use module aliases!
+import Vue from '../../themes/hugo-featherweight/node_modules/vue';
+import { format } from '../../themes/hugo-featherweight/node_modules/date-fns/index';
 
 Vue.component('accordion-toggle', {
 	// &#x25B2; // up
-	// &#x25BC; // down
+	// &#x25BC; // downtypes
 	template: `
 		<div :class="{ 'is-open': toggle }" @click="toggle = !toggle">
 			<slot></slot>
