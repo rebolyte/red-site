@@ -10,12 +10,15 @@
 		"dev": "cd themes/featherweight && yarn run dev && cd ../.. && hugo",
 		"build": "cd themes/featherweight && yarn run build && cd ../.. && hugo",
 		"fmt": "themes/featherweight/node_modules/.bin/prettier --write \"src/**/*.{js,ts,scss,css}\"",
-		"lint": "themes/featherweight/node_modules/.bin/eslint \"src/js/**/*.{js,ts}\" && stylelint \"src/styles/**/*.css\""
+		"lint-styles": "themes/featherweight/node_modules/.bin/stylelint \"src/styles/**/*.css\"",
+		"lint": "themes/featherweight/node_modules/.bin/eslint --config \"themes/featherweight/.eslintrc.json\" \"src/js/**/*.{js,ts}\""
 	},
 	"husky": {
 		"hooks": {
-			"pre-commit": "yarn run fmt && yarn run lint"
+			"pre-commit": "yarn run lint && yarn run lint-styles && yarn run fmt"
 		}
 	},
-	"devDependencies": {}
+	"devDependencies": {
+		"husky": "^1.0.0-rc.8"
+	}
 }
