@@ -38,8 +38,9 @@ $ git submodule update --remote --merge
 $ git commit -a - m "submodule updated"
 ```
 
-To push changes made in theme submodule:
+To push changes made in theme submodule (while within themes/featherweight directory):
 
 ```
-$ git push origin HEAD:<name-of-remote-branch>
+$ git commit -a -m "updates"
+$ git push origin HEAD:<branch-name-in-theme-repo>
 ```
