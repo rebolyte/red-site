@@ -1,6 +1,6 @@
 // TODO: Update these to use module aliases!
-import Vue from '../../themes/hugo-featherweight/node_modules/vue';
-import { format } from '../../themes/hugo-featherweight/node_modules/date-fns/index';
+import Vue from '../../themes/featherweight/node_modules/vue';
+import { format } from '../../themes/featherweight/node_modules/date-fns/index';
 
 Vue.component('accordion-toggle', {
 	// &#x25B2; // up

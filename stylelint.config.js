@@ -1,1 +1,1 @@
-module.exports = require('./themes/hugo-featherweight/stylelint.config');
+module.exports = require('./themes/featherweight/stylelint.config');

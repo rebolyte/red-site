@@ -5,12 +5,12 @@
 	"license": "Private, all rights reserved",
 	"private": true,
 	"scripts": {
-		"postinstall": "cd themes/hugo-featherweight && yarn install",
-		"start": "themes/hugo-featherweight/node_modules/.bin/concurrently \"cd themes/hugo-featherweight && yarn run watch\" \"hugo server --disableFastRender\"",
-		"dev": "cd themes/hugo-featherweight && yarn run dev && cd ../.. && hugo",
-		"build": "cd themes/hugo-featherweight && yarn run build && cd ../.. && hugo",
-		"fmt": "themes/hugo-featherweight/node_modules/.bin/prettier --write \"src/**/*.{js,ts,scss,css}\"",
-		"lint": "themes/hugo-featherweight/node_modules/.bin/eslint \"src/js/**/*.{js,ts}\" && stylelint \"src/styles/**/*.css\""
+		"postinstall": "cd themes/featherweight && yarn install",
+		"start": "themes/featherweight/node_modules/.bin/concurrently \"cd themes/featherweight && yarn run watch\" \"hugo server --disableFastRender\"",
+		"dev": "cd themes/featherweight && yarn run dev && cd ../.. && hugo",
+		"build": "cd themes/featherweight && yarn run build && cd ../.. && hugo",
+		"fmt": "themes/featherweight/node_modules/.bin/prettier --write \"src/**/*.{js,ts,scss,css}\"",
+		"lint": "themes/featherweight/node_modules/.bin/eslint \"src/js/**/*.{js,ts}\" && stylelint \"src/styles/**/*.css\""
 	},
 	"husky": {
 		"hooks": {

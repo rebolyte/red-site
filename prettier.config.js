@@ -1,1 +1,1 @@
-module.exports = require('./themes/hugo-featherweight/prettier.config.js');
+module.exports = require('./themes/featherweight/prettier.config.js');

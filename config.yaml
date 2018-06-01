@@ -2,7 +2,7 @@
 baseURL: "https://www.red-lang.org/"
 languageCode: "en-us"
 metaDataFormat: yaml
-theme: "hugo-featherweight"
+theme: "featherweight"
 pluralizeListTitles: false
 enableRobotsTXT: true
 defaultContentLanguage: "en"
