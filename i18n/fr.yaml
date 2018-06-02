@@ -1,11 +1,5 @@
-home:
-  other: Accueil
-ecosystem:
-  other: Écosystème
-language:
-  other: Langues
 about:
-  other: À propos Fullstack
+  other: À propos Red
 subscribe:
   other: Souscrire
 submitBtn:
