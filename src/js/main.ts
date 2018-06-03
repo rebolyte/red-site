@@ -4,7 +4,7 @@ import { format } from '../../themes/featherweight/node_modules/date-fns/index';
 
 Vue.component('accordion-toggle', {
 	// &#x25B2; // up
-	// &#x25BC; // downtypes
+	// &#x25BC; // down
 	template: `
 		<div :class="{ 'is-open': toggle }" @click="toggle = !toggle">
 			<slot></slot>
