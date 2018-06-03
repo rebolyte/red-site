@@ -1,0 +1,17 @@
+{{ define "main" }}
+
+<div>
+    {{ partial "page-title" (dict "title" .Title "subtitle" .Params.subtitle)}}
+
+    {{ .Content }}
+
+    {{ range .Params.roadmapEntries }}
+        <div>
+            <h4>{{ .heading }}</h4>
+            <p>{{ .text }}</p>
+        </div>
+    {{ end }}
+
+</div>
+
+{{ end }}
