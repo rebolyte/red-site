@@ -24,66 +24,47 @@ blocks:
     content: >
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ultrices magna in vehicula imperdiet. Nunc pellentesque ligula et vehicula elementum. Suspendisse faucibus fringilla neque, ut lacinia erat pulvinar sit amet. Aliquam vel ex erat. Nulla ultrices tellus enim. Proin at tristique tortor. Nullam ut tellus eu ipsum tristique pretium dictum vitae ex. Suspendisse euismod finibus odio, vel aliquet lorem. Proin condimentum id tortor in eleifend. Suspendisse varius euismod viverra. Phasellus sit amet nisi eget nulla tincidunt euismod nec eget leo. Curabitur ornare quam mattis magna pharetra dapibus. Aliquam placerat diam eu erat lobortis laoreet. Nunc eleifend convallis neque non mollis. Curabitur condimentum diam ante, sed laoreet quam rutrum in.
   - template: "grid-list"
+    num_cols: 4
     grid_items:
       - title: Friendly Syntax
-        icon: test
         description: Description goes here.
       - title: Homoiconic
-        icon: test
         description: Description goes here.
       - title: Reactive and Symbolic
-        icon: test
         description: Description goes here.
       - title: Object Support
-        icon: test
         description: Description goes here.
       - title: Gradual & Multi-typing
-        icon: test
         description: Description goes here.
       - title: Macros System
-        icon: test
         description: Description goes here.
       - title: Built-in Datatypes
-        icon: test
         description: Description goes here.
       - title: Native Code
-        icon: test
         description: Description goes here.
       - title: Cross-compilation
-        icon: test
         description: Different description snuck in this one somehow.
       - title: No Dependencies
-        icon: test
         description: Description goes here.
       - title: Parallelism Support
-        icon: test
         description: Description goes here.
       - title: Low-level Programming
-        icon: test
         description: Description goes here.
       - title: PEG Parser DSL
-        icon: test
         description: Description goes here.
       - title: Native GUI System
-        icon: test
         description: Description goes here. It would go here. Move right along.
       - title: Bridging to the JVM
-        icon: test
         description: Description goes here.
       - title: High-level Scripting
-        icon: test
         description: Description goes here.
       - title: Visual Studio Plugin
-        icon: test
         description: Description goes here.
       - title: Highly Embeddable
-        icon: test
         description: Description goes here.
       - title: Garbage Collected
-        icon: test
         description: Description goes here.
       - title: Single File
-        icon: test
         description: Description goes here.
   - template: "accordion"
     accordion_items:

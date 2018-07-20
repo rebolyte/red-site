@@ -2,7 +2,7 @@
 title: Red Programming Language
 blocks:
   - template: "hero"
-    heading: "The World's First Full-Stack Programming Language."
+    heading: "The World's First Full-Stack Programming Language"
     content: >
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum temporibus eum quibusdam quas
         voluptatum reiciendis optio ipsa nulla maxime dignissimos debitis, laboriosam quisquam nobis
@@ -15,9 +15,11 @@ blocks:
     link_title: "blah blah blah"
     link_text: "Read More"
     link_url: "https://red-lang.org"
-  - template: "1up"
+  - template: "1up-media"
+    type: "video"
     heading: "See Red in Action"
-    content: "this is where the video goes"
+    src: >
+      <iframe src="https://www.youtube.com/embed/SGjVUfiZBLA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
   - template: "media-feature"
     heading: "Abstraction on Every Level"
     content: "Proin at finibus ex. *Duis sed nisi lectus.* Mauris interdum ac nunc quis pharetra. Vivamus rhoncus porttitor ante."
@@ -41,7 +43,4 @@ blocks:
     button_text: "Learn More"
     button_url: "https://foundation.red-lang.org"
   - template: "narrow-cta"
-    description: "Download the Latest Stable Version of Red"
-    link_url: "/download"
-    link_text: "Download Red 0.6.3"
 ---

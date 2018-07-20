@@ -40,6 +40,7 @@ blocks:
   - template: "1up"
     heading: "Une langue qui parle d'elle-même"
     content: "code samples"
+  - template: "narrow-cta"
 ---
 
 Content goes here.
