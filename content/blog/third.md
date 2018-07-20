@@ -2,6 +2,7 @@
 date: 2017-04-14T13:52:27-05:00
 title: Post 3
 author: Nenad Rakocevic
+category: meeting
 tags:
   - gui
   - macos

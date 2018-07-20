@@ -2,12 +2,13 @@
 date: 2018-05-28T13:52:27-05:00
 title: Markdown test
 author: Nenad Rakocevic
+category: update
 tags:
   - gui
   - macos
   - blockchain
 hero_type: image
-hero_src: https://images.unsplash.com/photo-1506239015622-cc71326f7239?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4ad541e4ce0c1ae073c45273770990b6&auto=format&fit=crop&w=1950&q=80
+hero_src: https://images.pexels.com/photos/993019/pexels-photo-993019.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
 ---
 
 # h1 Heading

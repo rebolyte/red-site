@@ -2,6 +2,7 @@
 date: 2017-04-10T15:02:07-05:00
 title: first
 author: Gregg Irwin
+category: meeting
 tags:
   - blockchain
   - android

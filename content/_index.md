@@ -8,7 +8,7 @@ blocks:
         voluptatum reiciendis optio ipsa nulla maxime dignissimos debitis, laboriosam quisquam nobis
         tempore sed dicta voluptate eaque eius?
     button_text: "Download"
-    button_url: "/download"
+    button_url: "/download/"
     image_position: "right"
   - template: "narrow-feature"
     link_description: "Latest blog:"
