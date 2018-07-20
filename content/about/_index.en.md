@@ -100,7 +100,6 @@ blocks:
     button_url: "https://red-lang.org"
     button_text: "Download"
   - template: "narrow-cta"
-    description: "Download the Latest Stable Version of Red"
-    link_url: "/download"
-    link_text: "Download Red 0.6.3"
 ---
+
+some content.

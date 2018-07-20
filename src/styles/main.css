@@ -50,3 +50,23 @@
 .subtitle a {
 	@apply .text-rl-gray;
 }
+
+.toc ul {
+	@apply .list-reset;
+}
+
+#TableOfContents > ul > li > ul > li {
+	@apply .py-2;
+}
+
+#TableOfContents > ul > li > ul > li:not(:last-child) {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#TableOfContents > ul > li > ul > li > ul > li {
+	@apply .py-2 .pl-4;
+}
+
+.toc a {
+	@apply .text-rl-gray .no-underline;
+}

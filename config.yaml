@@ -13,6 +13,7 @@ permalinks:
   blog: /:section/:year/:month/:slug/
 
 taxonomies:
+  category: category
   tags: tags
 
 languages:

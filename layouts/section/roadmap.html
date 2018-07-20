@@ -4,7 +4,7 @@
     {{ partial "page-title" (dict "title" .Title "subtitle" .Params.subtitle)}}
 
     {{ with .Content }}
-        <section class="container mx-auto mt-12 px-2 md:px-8 pb-8 text-rl-gray content">
+        <section class="container mx-auto mt-12 px-4 md:px-8 pb-8 text-grey-darker content">
             {{ . }}
         </section>
     {{ end }}
@@ -29,7 +29,7 @@
                                 <ul class="list-reset mobile:pl-12 mt-8">
                                     {{ $len := (len .) }}
                                     {{ range $index, $element := . }}
-                                    <li class="block w-full h-10 flex flex-col md:flex-row items-start{{ if ne (add $index 1) $len }} mb-2 md:mb-6{{ end }}">
+                                    <li class="block w-full min-h-5xs flex flex-col md:flex-row items-start{{ if ne (add $index 1) $len }} mb-2 md:mb-6{{ end }}">
                                         <div class="md:w-48 md:pr-2">
                                             {{- .item | markdownify }}
                                         </div>
