@@ -46,3 +46,7 @@
 	background-size: 640px;
 	background-position: left top;
 }
+
+.subtitle a {
+	@apply .text-rl-gray;
+}
