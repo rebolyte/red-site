@@ -94,5 +94,3 @@ blocks:
     button_url: "https://ico.red-lang.org"
   - template: "narrow-cta"
 ---
-
-some content.
