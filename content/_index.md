@@ -3,7 +3,7 @@ title: Red Programming Language
 blocks:
   - template: "hero"
     heading: "The World's First Full-Stack Programming Language"
-    content: >
+    content: |-
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum temporibus eum quibusdam quas
         voluptatum reiciendis optio ipsa nulla maxime dignissimos debitis, laboriosam quisquam nobis
         tempore sed dicta voluptate eaque eius?
@@ -34,9 +34,8 @@ blocks:
     heading: "A Language that Speaks for Itself"
     content: "code samples"
   - template: "action-feature"
-    background_style: "dark"
     heading: "The Red Foundation is Making It Easier to Build Amazing Products with Red."
-    content: >
+    content: |-
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et lorem sed quam porta rhoncus. Pellentesque porttitor nisi sit amet tortor tristique, nec euismod odio laoreet. Vivamus non elementum sem, non sodales dolor.
     image: "http://via.placeholder.com/500x280"
     image_position: "right"

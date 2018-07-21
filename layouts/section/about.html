@@ -27,8 +27,6 @@
         {{- end -}}
     </div>
 
-    <!-- <img src="/images/gray-curve.svg"> -->
-
     <div class="bg-theme-gradient curve-top w-full">
         {{- range .Params.blocks -}}
             {{- if eq .template "action-feature" -}}{{ partial "blocks/action-feature" (dict "Params" .) }}{{- end -}}
