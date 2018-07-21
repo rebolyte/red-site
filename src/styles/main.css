@@ -55,14 +55,17 @@
 	@apply .list-reset;
 }
 
+/* stylelint-disable-next-line */
 #TableOfContents > ul > li > ul > li {
 	@apply .py-2;
 }
 
+/* stylelint-disable-next-line */
 #TableOfContents > ul > li > ul > li:not(:last-child) {
 	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+/* stylelint-disable-next-line */
 #TableOfContents > ul > li > ul > li > ul > li {
 	@apply .py-2 .pl-4;
 }

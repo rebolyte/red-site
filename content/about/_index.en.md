@@ -8,7 +8,7 @@ blocks:
     content: >
       Nam congue rutrum lorem, eget porta lectus placerat vitae. Donec faucibus lacus vitae est vestibulum, et pharetra sem accumsan. Fusce aliquam lectus at nulla varius efficitur. Donec in accumsan nisi. Etiam nec tempus ante, ac blandit nisl. Donec malesuada volutpat nisi, at consequat dui venenatis eget. Fusce dapibus nisi ut hendrerit lobortis. Etiam viverra faucibus nibh, nec vehicula tortor vulputate et.
     image: "http://via.placeholder.com/500x280"
-    image_position: "right"
+    image_position: "left"
     image_shadow: true
   - template: "media-feature"
     background_style: "dark"
@@ -16,7 +16,7 @@ blocks:
     content: >
       Integer ut aliquam est. Vestibulum pretium sit amet tortor vel sagittis. Mauris quis ex nisl. Nam vel interdum tortor. Aenean auctor metus erat, non congue nisi tempus at. Pellentesque convallis lacus nulla, nec ullamcorper velit pharetra eu. Suspendisse dapibus sit amet nisl gravida tincidunt. Ut id aliquam diam. Sed dui ex, tristique eu diam nec, tincidunt ullamcorper urna. Aliquam libero nulla, convallis nec mauris nec, euismod finibus ipsum.
     image: "http://via.placeholder.com/500x280"
-    image_position: "left"
+    image_position: "right"
     image_shadow: true
   - template: "media-feature"
     background_style: "dark"
@@ -76,7 +76,6 @@ blocks:
       - title: Where is Red going?
         description: Description goes here.
   - template: "action-feature"
-    background_style: "dark"
     heading: "The Red Foundation is Making It Easier to Build Amazing Products with Red."
     content: >
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et lorem sed quam porta rhoncus. Pellentesque porttitor nisi sit amet tortor tristique, nec euismod odio laoreet. Vivamus non elementum sem, non sodales dolor.
@@ -85,7 +84,6 @@ blocks:
     button_text: "Learn More"
     button_url: "https://foundation.red-lang.org"
   - template: "action-feature"
-    background_style: "dark"
     heading: "The RED Token is Powering a Revolutionary New Kind of Blockchain."
     content: >
       Integer ut aliquam est. Vestibulum pretium sit amet tortor vel sagittis. Mauris quis ex nisl. Nam vel interdum tortor. Aenean auctor metus erat, non congue nisi tempus at. Pellentesque convallis lacus nulla, nec ullamcorper velit pharetra eu. Suspendisse dapibus sit amet nisl gravida tincidunt. Ut id aliquam diam. Sed dui ex, tristique eu diam nec, tincidunt ullamcorper urna. Aliquam libero nulla, convallis nec mauris nec, euismod finibus ipsum.
