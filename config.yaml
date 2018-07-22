@@ -17,6 +17,18 @@ taxonomies:
   category: category
   tags: tags
 
+outputs:
+  home:
+    - HTML
+    - JSON
+  section:
+    - HTML
+    - RSS
+    - JSON
+  page:
+    - HTML
+    - JSON
+
 languages:
   en:
     LanguageName: "English"
