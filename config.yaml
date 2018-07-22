@@ -1,5 +1,6 @@
 ---
 baseURL: "https://www.red-lang.org/"
+title: Red Programming Language
 languageCode: "en-us"
 metaDataFormat: yaml
 theme: "featherweight"

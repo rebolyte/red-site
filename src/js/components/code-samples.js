@@ -46,13 +46,13 @@ const codeSamples = Vue.component('code-samples', {
 					title: 'Example 2',
 					description:
 						'This is example 2. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum temporibus eum quibusdam quas voluptatum reiciendis optio ipsa nulla maxime dignissimos debitis, laboriosam quisquam nobis tempore sed dicta voluptate eaque eius?',
-					source: `parse charset ; add more here`
+					source: 'parse charset ; add more here'
 				},
 				{
 					title: 'Example 3',
 					description:
 						'This is example 3. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum temporibus eum quibusdam quas voluptatum reiciendis optio ipsa nulla maxime dignissimos debitis, laboriosam quisquam nobis tempore sed dicta voluptate eaque eius?',
-					source: `another sample`
+					source: 'another sample'
 				}
 			]
 		};
