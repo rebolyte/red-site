@@ -1,0 +1,56 @@
+{{ define "main" }}
+
+	<div class="bg-theme-gradient pb-96 w-full">
+		{{- range .Params.blocks -}}
+			{{- if eq .template "hero" -}}{{ partial "blocks/hero" (dict "Params" .) }}{{- end -}}
+		{{- end -}}
+
+		<section class="w-full px-4 py-2">
+			<div class="container mx-auto px-4 py-2 border border-solid border-grey-dark">
+				<span class="text-rl-gray">{{ i18n "latest_blog" }}:</span>
+				{{ range first 1 (where .Data.Pages.ByDate.Reverse "Section" "blog") }}
+					<a href="{{ .RelPermalink | relLangURL }}" class="no-underline text-white">
+						<span class="font-semibold">{{ .Title }}</span> | <span class="text-rl-gray">{{ i18n "read_more" }}</span>
+					</a>
+				{{ end }}
+			</div>
+		</section>
+	</div>
+
+	<div id="home-curve" class="curve-bg w-full">	
+		<div class="-mt-96">
+			{{- range .Params.blocks -}}
+				{{- if eq .template "1up-media" -}}{{ partial "blocks/1up-media" (dict "Params" .) }}{{- end -}}
+			{{- end -}}
+		</div>
+	</div>
+		
+	{{- range .Params.blocks -}}
+		{{- if eq .template "media-feature" -}}{{ partial "blocks/media-feature" (dict "Params" .) }}{{- end -}}
+		{{- if eq .template "narrow-feature" -}}{{ partial "blocks/narrow-feature" (dict "Params" .) }}{{- end -}}
+		{{- if eq .template "call-to-action" -}}{{ partial "blocks/cta" (dict "Params" .) }}{{- end -}}
+		{{- if eq .template "1up" -}}{{ partial "blocks/1up" (dict "Params" .) }}{{- end -}}
+		{{- if eq .template "2up" -}}{{ partial "blocks/2up" (dict "Params" .) }}{{- end -}}
+		{{- if eq .template "card-grid" -}}{{ partial "blocks/card-grid" (dict "Params" .) }}{{- end -}}
+		{{- if eq .template "grid-list" -}}{{ partial "blocks/grid-list" (dict "Params" .) }}{{- end -}}
+	{{- end -}}
+
+	{{ .Content }}
+	
+	<section class="py-4">
+		<div class="container mx-auto flex flex-col items-center">
+			<div class="inline-block mb-4">
+				<h3 class="font-semibold text-2xl text-rl-gray rl-ctr-title-underline">{{ .Params.code_sample_heading }}</h3>
+			</div>
+			<code-samples></code-samples>
+		</div>
+	</section>
+		
+    <div class="bg-theme-gradient curve-top w-full">
+        {{- range .Params.blocks -}}
+            {{- if eq .template "action-feature" -}}{{ partial "blocks/action-feature" (dict "Params" .) }}{{- end -}}
+            {{- if eq .template "narrow-cta" -}}{{ partial "blocks/narrow-cta" (dict "Params" .) }}{{- end -}}
+        {{- end -}}
+    </div>
+
+{{ end }}

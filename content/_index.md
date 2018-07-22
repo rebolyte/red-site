@@ -1,7 +1,6 @@
 ---
 title: Red Programming Language
-splash_src: >
-  <iframe src="https://www.youtube.com/embed/SGjVUfiZBLA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+code_sample_heading: A Language that Speaks for Itself
 blocks:
   - template: "hero"
     heading: "The World's First Full-Stack Programming Language"
@@ -27,9 +26,6 @@ blocks:
     content: "something something something"
     image: "http://via.placeholder.com/500x280"
     image_position: "left"
-  - template: "1up"
-    heading: "A Language that Speaks for Itself"
-    content: "code samples"
   - template: "action-feature"
     heading: "The Red Foundation is Making It Easier to Build Amazing Products with Red."
     content: |-

@@ -72,6 +72,10 @@
 	@apply .list-reset;
 }
 
+.border-b-faint {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
 /* stylelint-disable-next-line */
 #TableOfContents > ul > li > ul > li {
 	@apply .py-2;
@@ -79,7 +83,7 @@
 
 /* stylelint-disable-next-line */
 #TableOfContents > ul > li > ul > li:not(:last-child) {
-	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	@apply .border-b-faint;
 }
 
 /* stylelint-disable-next-line */
