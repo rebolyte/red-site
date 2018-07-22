@@ -1,5 +1,7 @@
 ---
 title: Red Programming Language
+splash_src: >
+  <iframe src="https://www.youtube.com/embed/SGjVUfiZBLA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 blocks:
   - template: "hero"
     heading: "The World's First Full-Stack Programming Language"
@@ -10,11 +12,6 @@ blocks:
     button_text: "Download"
     button_url: "/download/"
     image_position: "right"
-  - template: "narrow-feature"
-    link_description: "Latest blog:"
-    link_title: "blah blah blah"
-    link_text: "Read More"
-    link_url: "https://red-lang.org"
   - template: "1up-media"
     type: "video"
     heading: "See Red in Action"

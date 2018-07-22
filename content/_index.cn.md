@@ -10,13 +10,11 @@ blocks:
     button_text: "入门"
     button_url: "/download"
     image_position: "right"
-  - template: "narrow-feature"
-    link_description: "最新的博客:"
-    link_text: "blah blah blah"
-    link_url: "https://red-lang.org"
-  - template: "1up"
-    heading: "See Red in action"
-    content: "this is where the video goes"
+  - template: "1up-media"
+    type: "video"
+    heading: "See Red in Action"
+    src: >
+      <iframe src="https://www.youtube.com/embed/SGjVUfiZBLA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
   - template: "media-feature"
     heading: "Lorem ipsum dolor"
     content: "Proin at finibus ex. *Duis sed nisi lectus.* Mauris interdum ac nunc quis pharetra. Vivamus rhoncus porttitor ante."
