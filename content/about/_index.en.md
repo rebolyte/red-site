@@ -84,6 +84,7 @@ blocks:
     image_position: "right"
     button_text: "Learn More"
     button_url: "https://foundation.red-lang.org"
+    bg_dark: true
   - template: "action-feature"
     heading: "The RED Token is Powering a Revolutionary New Kind of Blockchain."
     content: |-
@@ -92,5 +93,6 @@ blocks:
     image_position: "left"
     button_text: "Learn More"
     button_url: "https://ico.red-lang.org"
+    bg_dark: true
   - template: "narrow-cta"
 ---

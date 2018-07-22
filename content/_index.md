@@ -34,5 +34,6 @@ blocks:
     image_position: "right"
     button_text: "Learn More"
     button_url: "https://foundation.red-lang.org"
+    bg_dark: true
   - template: "narrow-cta"
 ---
