@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-	<div class="bg-theme-gradient pb-96 w-full">
+	<div class="bg-theme-gradient w-full pb-48 relative">
 		{{- range .Params.blocks -}}
 			{{- if eq .template "hero" -}}{{ partial "blocks/hero" (dict "Params" .) }}{{- end -}}
 		{{- end -}}
@@ -15,14 +15,14 @@
 				{{ end }}
 			</div>
 		</section>
+
+		<svg viewBox="0 0 1440 191" xmlns="http://www.w3.org/2000/svg" class="absolute pin-b" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.414;"><path d="M-0,191.068l1440.82,0l0,-192c0,0 -91.43,96.47 -748.423,91.498c-628.009,-4.753 -692.392,100.502 -692.392,100.502Z" style="fill:#eee;"/></svg>
 	</div>
 
-	<div id="home-curve" class="curve-bg w-full">	
-		<div class="-mt-96">
+	<div class="w-full">	
 			{{- range .Params.blocks -}}
 				{{- if eq .template "1up-media" -}}{{ partial "blocks/1up-media" (dict "Params" .) }}{{- end -}}
 			{{- end -}}
-		</div>
 	</div>
 		
 	{{- range .Params.blocks -}}

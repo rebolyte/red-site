@@ -38,16 +38,6 @@
  * Other site-specific styles
  */
 
-#home-curve {
-	margin-top: -12%;
-}
-
-@media (min-width: config('screens.sm')) {
-	#home-curve {
-		margin-top: -13.2%;
-	}
-}
-
 .curve-bg {
 	/* Note that the fill color for the curve here must match the page background color */
 

@@ -6,11 +6,11 @@ const codeSamples = Vue.component('code-samples', {
 	template: `
 		<div class="flex flex-col md:flex-row w-full rounded-xl bg-white shadow-lg max-w-xl min-h-xs">
 
-			<pre class="w-1/2 p-4 bg-white overflow-auto rounded-tl-xl rounded-bl-xl">
+			<pre class="md:w-1/2 p-4 bg-white overflow-auto rounded-tl-xl rounded-bl-xl">
 {{ selectedSample.source }}
 			</pre>
 
-			<ul class="list-reset px-8 py-4 bg-rl-gray-lighter w-1/2 rounded-tr-xl rounded-br-xl">
+			<ul class="list-reset px-8 py-4 bg-rl-gray-lighter md:w-1/2 rounded-bl-xl md:rounded-bl-none md:rounded-tr-xl rounded-br-xl">
 				<li 
 					v-for="(sample, idx) in samples" 
 					class="select-none has-dropdown pb-2"
